@@ -1,28 +1,106 @@
-\documentclass[a4paper,12pts]{report}
+\documentclass[a4paper,12pts]{article}
 
 \usepackage[polish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
+\usepackage{tabularx}
+\usepackage{anysize}
+\frenchspacing
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{mathptmx}
+\usepackage{geometry}
+\usepackage{wrapfig}
+
+\sloppy
+
+
 \begin{document}
+	\newgeometry{tmargin=2cm, bmargin=2cm, lmargin=2cm, rmargin=2cm}
+	%\title{\textbf{Sprawozdanie z zajęć laboratoryjnych z fizyki nr 1} \\ \large Wyznaczanie przyspieszenia ziemskiego za pomocą wahadła matematycznego}
+	%\date{11 października 2017r.}
+	%\author{Piotr Kucharski \\ Dominik Zabłotny \\ zespół 3}
+	%\maketitle
 	
+	\begin{table}[]
+	\centering
+	\begin{tabular}{lllllll}
+		\cline{1-6}
+		\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}EAiIB\\ Informatyka\end{tabular}}              & \multicolumn{2}{l|}{\begin{tabular}[c]{@{}l@{}}Piotr Kucharski\\ Dominik Zabłotny \end{tabular}}                                                                                                & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Rok\\ II\end{tabular}}          & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Grupa\\ 1a\end{tabular}}            & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Zespół\\ III\end{tabular}}      &  \\ \cline{1-6}
+		\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Pracownia\\ FIZYCZNA\\ WFiIS AGH\end{tabular}} & \multicolumn{4}{l|}{\begin{tabular}[c]{@{}l@{}}Temat:\\ \textbf{Opracowanie danych pomiarowych} \end{tabular}}                                                                                                                                                                                                                                            & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}nr ćwiczenia:\\ 0\end{tabular}} &  \\ \cline{1-6}
+		\multicolumn{1}{|l|}{\begin{tabular}[c]{@{}c@{}}Data wykonania:\\ 11.10.2017\end{tabular}}      & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Data oddania:\\ 18.10.2017\end{tabular}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Zwrot do poprawki:\\ \phantom{data poprawki}\end{tabular}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Data oddania:\\  \phantom{data oddania}\end{tabular}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Data zaliczenia:\\  \phantom{data zaliczenia}\end{tabular}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}OCENA:\\ \phantom{ocena}\end{tabular}}       &  \\ \cline{1-6}
+		&                                                                                         &                                                                                     &                                                                                &                                                                                   &                                                                               & 
+	\end{tabular}
+\end{table}
+		
+	%-----------------------------------------------------------------------------
 	
+	\section{Przebieg ćwiczenia}
+	\subsection{Plan wykonania doświadczenia}
+	% Opisz jak to zrobić itd
 	
-	\begin{table}{ | c | c | c | c | }
-		\caption{Pomiar okresu drgań przy ustalonej długości wahadła $l = 396 [mm] \pm 1 [mm]}$}
-		\hline
-		\textrm{Lp.} & \textrm{Liczba okresów k} & \textrm{czas t dla k okresów [s]} & \textrm{okres T=t/k [s]} \\ \hline
-		1 & 20 & 24.8 & 1.240 \\ \hline
-		2 & 40 & 49.82 & 1.246 \\ \hline
-		3 & 60 & 75.14 & 1.252 \\ \hline
-		4 & 80 & 100.11 & 1.251 \\ \hline
-		5 & 100 & 125.07 & 1.251 \\ \hline
-		6 & 20 & 24.83 & 1.242 \\ \hline
-		7 & 40 & 49.89 & 1.247 \\ \hline
-		8 & 60 & 74.92 & 1.249 \\ \hline
-		9 & 20 & 25.2 & 1.260 \\ \hline
-		10 & 40 & 50.23 & 1.256 \\ \hline
+	\subsection{Przygotowanie}
+	% Opisać stanowisko i przygotowanie osób i przyrządów
+	
+	\subsection{Pomiary}
+	% Tabelki, pare słów o nich, jak robić jak mierzyć
+		
+	\subsection{Błędy pomiarowe}
+	% Wyznaczyć błędy pomiarowe, te A B itd, średnie
+	
+	\section{Opracowanie wyników}
+	% Wyznaczyć przyspieszenie grawitacyjne, wstawić wykresy, opisać je itd
+	
+	\section{Wnioski}
+	% Jakieś wnioski, coś napisać, dać wszystkie wyniki tak ładnie razem
+	
+
+		
+	\begin{table}[hb!]
+		\centering
+		\begin{tabular}{ | c | c | c | c | }
+			\hline
+			\textrm{Lp.} & \textrm{Liczba okresów } k & \textrm{czas } t \textrm{ dla } k \textrm{ okresów } [s] & \textrm{okres } T_i=t/k [s] \\ \hline
+			1 & 20 & 24.8 & 1.240 \\ \hline
+			2 & 40 & 49.82 & 1.246 \\ \hline
+			3 & 60 & 75.14 & 1.252 \\ \hline
+			4 & 80 & 100.11 & 1.251 \\ \hline
+			5 & 100 & 125.07 & 1.251 \\ \hline
+			6 & 20 & 24.83 & 1.242 \\ \hline
+			7 & 40 & 49.89 & 1.247 \\ \hline
+			8 & 60 & 74.92 & 1.249 \\ \hline
+			9 & 20 & 25.2 & 1.260 \\ \hline
+			10 & 40 & 50.23 & 1.256 \\ \hline
+		\end{tabular}
+		\caption{Pomiar okresu drgań przy ustalonej długości wahadła $l~=~396~[mm]~\pm~1 [mm]$.}
+		\label{Tabela1}	
 	\end{table}
+	
     
+    \begin{table}[]
+    	\centering
+    	\begin{array}{ | c | c | c | c | c | c | }
+    		\hline
+    		Lp. & l~[mm] & k & t~[s] & T~[s] & T^2~[s^2] \\ \hline
+    		1 & 369 & 20 & 24.8 & 1.240 & 1.538 \\ \hline
+    		2 & 163 & 20 & 16.31 & 0.816 & 0.665 \\ \hline
+    		3 & 201 & 20 & 18.06 & 0.903 & 0.815 \\ \hline
+    		4 & 241 & 10 & 10.1 & 1.010 & 1.020 \\ \hline
+    		5 & 241 & 20 & 19.91 & 0.996 & 0.991 \\ \hline
+    		6 & 281 & 30 & 31.97 & 1.066 & 1.136 \\ \hline
+    		7 & 281 & 20 & 21.38 & 1.069 & 1.143 \\ \hline
+    		8 & 321 & 20 & 22.75 & 1.138 & 1.294 \\ \hline
+    		9 & 357 & 10 & 12.09 & 1.209 & 1.462 \\ \hline
+    		10 & 394 & 10 & 12.54 & 1.254 & 1.573 \\ \hline
+    		11 & 106 & 10 & 6.63 & 0.663 & 0.440 \\ \hline
+    		12 & 146 & 10 & 7.82 & 0.782 & 0.612 \\ \hline
+    		13 & 195 & 10 & 8.94 & 0.894 & 0.799 \\ \hline
+    		14 & 240 & 10 & 9.85 & 0.985 & 0.970 \\ \hline
+    		15 & 279 & 10 & 10.69 & 1.069 & 1.143 \\ \hline
+    	\end{array}
+    	\caption{Pomiar zależności okresu drgań od długości wahadła $l$}
+    \end{table}
 	
 \end{document}
