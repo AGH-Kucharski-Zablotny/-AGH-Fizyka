@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.10.12)  17 OCT 2017 15:26
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.10.12)  17 OCT 2017 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -618,11 +618,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 56.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 56.
-
+File: wah.png Graphic file (type bmp)
+<wah.png>
+ [2]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.62 ...textrm{ okresów [s]} & \textrm{okres } T_
+l.102 ...extrm{ okresów [s]} & \textrm{okres } T_
                                                   i=t/k \textrm{~[s]} \\ \hline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -630,7 +632,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.62 ...rm{okres } T_i=t/k \textrm{~[s]} \\ \hline
+l.102 ...m{okres } T_i=t/k \textrm{~[s]} \\ \hline
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -641,7 +643,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.62 ...rm{okres } T_i=t/k \textrm{~[s]} \\ \hline
+l.102 ...m{okres } T_i=t/k \textrm{~[s]} \\ \hline
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -649,7 +651,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.62 ...rm{okres } T_i=t/k \textrm{~[s]} \\ \hline
+l.102 ...m{okres } T_i=t/k \textrm{~[s]} \\ \hline
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -658,13 +660,16 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 74.
+(Font)              <8> on input line 114.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 74.
+(Font)              <6> on input line 114.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.99 ...\begin{array}{ | c | c | c | c | c | c | }
+l.139 ...begin{array}{ | c | c | c | c | c | c | }
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -672,7 +677,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.117 ^^I^^I\end{array}
+l.157 ^^I^^I\end{array}
                        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -683,30 +688,22 @@ my insertion and my current dilemma will both disappear.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-File: wykres_punktowy.png Graphic file (type bmp)
-<wykres_punktowy.png>
+File: T(l).png Graphic file (type bmp)
+<T(l).png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `analiza_niepewnosci' on page 2 undefined on input lin
-e 129.
-
-[2] [3] (./spr.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[3]
+File: regresja.png Graphic file (type bmp)
+<regresja.png>
+ [4] [5] [6] (./spr.aux) ) 
 Here is how much of TeX's memory you used:
- 12170 strings out of 492994
- 268714 string characters out of 6137807
- 354716 words of memory out of 5000000
- 16117 multiletter control sequences out of 15000+600000
+ 12179 strings out of 492994
+ 268781 string characters out of 6137807
+ 356734 words of memory out of 5000000
+ 16124 multiletter control sequences out of 15000+600000
  532247 words of font info for 47 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 36i,10n,65p,10366b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,10n,65p,10366b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on spr.pdf (3 pages).
+Output written on spr.pdf (6 pages).
