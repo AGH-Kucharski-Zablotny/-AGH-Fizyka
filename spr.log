@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.10.12)  17 OCT 2017 23:10
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.10.12)  17 OCT 2017 23:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -685,18 +685,15 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 File: T(l).png Graphic file (type bmp)
 <T(l).png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3]
+[3] [4]
 File: regresja.png Graphic file (type bmp)
 <regresja.png>
- [4] [5] [6] [7] (./spr.aux) ) 
+ [5] [6] [7] (./spr.aux) ) 
 Here is how much of TeX's memory you used:
  12179 strings out of 492994
  268781 string characters out of 6137807
