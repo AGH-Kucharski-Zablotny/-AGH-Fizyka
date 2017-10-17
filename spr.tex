@@ -1,53 +1,65 @@
 % !Mode:: "TeX:UTF-8"
 \documentclass[a4paper,12pts]{article}
 
-\usepackage[polish]{babel}
+%\usepackage[polish]{babel}
+\usepackage{polski}
 \usepackage{fontspec}
 \setmainfont{Calibri}
 
+\linespread{1.15}
 
+\usepackage{caption}
+\captionsetup{%
+	font={footnotesize},
+	labelfont={bf}
+}
+
+\usepackage{anysize}
+\usepackage{geometry}
+\usepackage{graphicx}
+
+\sloppy
 
 \begin{document}
+	\thispagestyle{empty}
 	\begin{flushleft}
-		\begin{vplace}[0.7]
-			{\large \textbf{Sprawozdanie z ćwiczenia nr 0} }
-			\\ Wyznaczanie przyspieszenia ziemskiego za pomocą wahadła matematycznego
-			\\ Piotr Kucharski \\ Dominik Zabłotny \\ \\ Informatyka EAIiIB \\ Rok II \\ Zespół 3
-			\\ 11 października 2017r.	
-		\end{vplace}
-		
+		Wydział Elektrotechniki, Automatyki, Informatyki i Inżynierii Biomedycznej \\
+		Informatyka, rok II \\
+		Zespół numer 3 \\
+		Piotr Kucharski \\
+		Dominik Zabłotny \\
+		\vspace*{\fill}
+		%-----------NUMER CWICZENIA--------%
+		{\large \textbf{Sprawozdanie z ćwiczenia nr 0} } \\
+		%-----------TEMAT ĆWICZENIA--------%
+		Wyznaczanie przyspieszenia ziemskiego za pomocą wahadła matematycznego.		
+		\vfill	
+		%-----------DATA-------------%
+		11 października 2017r
 	\end{flushleft}
 	
 	\newpage
 	
-	%-----------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------------------------------
 	
-	\section{Przebieg ćwiczenia}
-	\subsection{Plan wykonania doświadczenia}
-	% Opisz jak to zrobić itd
-	Celem laboratorium jest wyznaczenie przyspieszenia ziemskiego za pomocą wahadła matematycznego. Definuje się je jako ciało o masie punktowej zawieszone na cienkiej, nierozciągliwej nici, które wytrącone z równowagi zaczyna się wahać ruchem okresowym w płaszczynie pionowej pod wpływem siły ciężkości.
+	\section{Cel ćwiczenia}
 	
-	\subsection{Przygotowanie}
-	% Opisać stanowisko i przygotowanie osób i przyrządów
+%--------------------------------------------------------------------------------------------------------------
 	
-	\subsection{Pomiary}
-	% Tabelki, pare słów o nich, jak robić jak mierzyć
+	\section{Wykonanie ćwiczenia}
 	
-	\subsection{Błędy pomiarowe}
-	% Wyznaczyć błędy pomiarowe, te A B itd, średnie
+%--------------------------------------------------------------------------------------------------------------
 	
-	\section{Opracowanie wyników}
-	% Wyznaczyć przyspieszenie grawitacyjne, wstawić wykresy, opisać je itd
+	\section{Opracowanie danych pomiarowych}
 	
-	\section{Wnioski}
-	% Jakieś wnioski, coś napisać, dać wszystkie wyniki tak ładnie razem
+	\subsection{Przyspieszenie grawitacyjne dla stałej długości nici wahadła}
+	Zmierzone wielkości zapisano w tabeli \ref{Tabela1}, gdzie uwzględniono czas wykonania $k$ okresów w czasie $t$ oraz wyliczono odpowiednią wartość okresu $T$ dla danej próby.
 	
-	
-	\begin{table}[hb!]
+	\begin{table}[!h]
 		\centering
 		\begin{tabular}{ | c | c | c | c | }
 			\hline
-			\textrm{Lp.} & \textrm{Liczba okresów } k & \textrm{czas } t \textrm{ dla } k \textrm{ okresów } [s] & \textrm{okres } T_i=t/k [s] \\ \hline
+			\textrm{Lp.} & \textrm{Liczba okresów } k & \textrm{czas } t \textrm{ dla } k \textrm{ okresów [s]} & \textrm{okres } T_i=t/k \textrm{~[s]} \\ \hline
 			1 & 20 & 24.8 & 1.240 \\ \hline
 			2 & 40 & 49.82 & 1.246 \\ \hline
 			3 & 60 & 75.14 & 1.252 \\ \hline
@@ -59,16 +71,34 @@
 			9 & 20 & 25.2 & 1.260 \\ \hline
 			10 & 40 & 50.23 & 1.256 \\ \hline
 		\end{tabular}
-		\caption{Pomiar okresu drgań przy ustalonej długości wahadła $l~=~396~[mm]~\pm~1 [mm]$.}
+		\caption{Pomiar okresu drgań przy ustalonej długości wahadła $l=396$ mm$~\pm~1$ mm.}
 		\label{Tabela1}	
 	\end{table}
+
+	Z uzyskanych wyników obliczamy wartość średnią:
 	
+	\begin{equation}
+		T_{\textrm{śr}} = \frac{1}{n} \sum_{i = 1}^{n} T_i \approx 1.249
+	\end{equation}
+	Po podstawieniu uzyskanej wartości do wzoru na przyspieszenie grawitacyjne uzyskujemy:
 	
-	\begin{table}[]
+	\begin{equation}
+		g = \frac{4 \pi^2 l}{T^2_{\textrm{śr}}} = \frac{4 \cdot (3.141)^2 \cdot 0.396 \textrm{ m}}{(1.249 \textrm{ s})^2} %
+		\approx \frac{15.628 \textrm{ m}}{1.561 \textrm{ s}^2} \approx 10.013 ~\frac{\textrm{m}}{\textrm{s}^2}
+	\end{equation}
+	\label{gStala}
+	
+	%----------------------------------------------------------------------------------------------------------
+	
+	\subsection{Przyspieszenie grawitacyjne dla zmiennej długości nici wahadła}
+	
+	Zbadany okres drgań w zależności od długości wahadła przedstawiono w tabeli \ref{tabela2}.
+	
+	\begin{table}[!h]
 		\centering
 		\begin{array}{ | c | c | c | c | c | c | }
 			\hline
-			Lp. & l~[mm] & k & t~[s] & T~[s] & T^2~[s^2] \\ \hline
+			\textrm{Lp.} & l \textrm{ [mm]} & k & t \textrm{ [s]} & T \textrm{ [s]} & T^2 \textrm{ [s$^2$]} \\ \hline
 			1 & 369 & 20 & 24.8 & 1.240 & 1.538 \\ \hline
 			2 & 163 & 20 & 16.31 & 0.816 & 0.665 \\ \hline
 			3 & 201 & 20 & 18.06 & 0.903 & 0.815 \\ \hline
@@ -86,8 +116,26 @@
 			15 & 279 & 10 & 10.69 & 1.069 & 1.143 \\ \hline
 		\end{array}
 		\caption{Pomiar zależności okresu drgań od długości wahadła $l$}
+		\label{tabela2}
 	\end{table}
+	Następnie z uzyskanych danych sporządzono wykres zależności kwadratu okresu wahania od długości wahadła (wykres \ref{wykr1}).
 	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[scale=0.7]{wykres_punktowy}
+		\caption{Wykres przedstawiający dane z tabeli \ref{tabela2}}
+		\label{wykr1}
+	\end{figure}
+	Jesteśmy w stanie zauważyć na nim pomiar odbiegający od całej prostej pomiarów, uznajemy to za błąd gruby oraz nie uznajemy w dalszych obliczeniach. Dokładnie temu pomiarowi przyjrzymy się w podrozdziale \ref{analiza_niepewnosci}
+	%----------------------------------------------------------------------------------------------------------	
 	
+	\subsection{Analiza niepewności}
+	\label{analiza_niepewnosci}
 	
+%--------------------------------------------------------------------------------------------------------------
+
+	\section{Podsumowanie}
+
+%--------------------------------------------------------------------------------------------------------------
+		
 \end{document}
