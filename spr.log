@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.10.12)  17 OCT 2017 22:33
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.10.12)  17 OCT 2017 23:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -696,7 +696,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [3]
 File: regresja.png Graphic file (type bmp)
 <regresja.png>
- [4] [5] [6] (./spr.aux) ) 
+ [4] [5] [6] [7] (./spr.aux) ) 
 Here is how much of TeX's memory you used:
  12179 strings out of 492994
  268781 string characters out of 6137807
@@ -706,4 +706,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  36i,10n,65p,10366b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on spr.pdf (6 pages).
+Output written on spr.pdf (7 pages).
