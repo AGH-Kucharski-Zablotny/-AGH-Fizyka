@@ -150,7 +150,7 @@ V = 2lf
 	
 	\subsection{Wyniki pomiarów}
 	
-	Zmierzone wielkości zostały zapisane w tabeli 1, gdzie zapisano również wyniki wyliczonych wartości obliczonych za pomocą wzorów (3), (4), (5) i (6). 
+	Zmierzone wielkości zostały zapisane w tabeli 1, gdzie zapisano również wyniki wyliczonych wartości obliczonych za pomocą wzorów (3), (4), (5) i (6). W kolejnych tabelach przestawione zostaną wyniki pomiarów dla każdego materiału.
 	
 		\begin{table}[h!]
 		\centering
@@ -160,7 +160,7 @@ V = 2lf
 			\textrm{Materiał} & \textrm{Kształt} & \textrm{Masa [kg]} & \textrm{Długość [m]} & \textrm{Objętość [m$^2$]} & \textrm{Gęstość [kg/m$^3$]} \\ \hline
 			\textrm{Aluminium} & \textrm{Walec} & 0.030 & 0.561 & 1.102 $\cdot$ 10$^{-5}$ & 2720.326 \\ \hline
 			\textrm{Mosiądz} & \textrm{Walec} & 0.237 & 0.998 & 2.821 $\cdot$ 10$^{-5}$ & 8401.275 \\ \hline
-			\textrm{Stal} & \textrm{Prostopadłościan} & 1.802 & 1.252 & 3.710 $\cdot$ 10$^{-4}$ & 7529.529 \\ \hline
+			\textrm{Stal} & \textrm{Prostopadłościan} & 2.794 & 1.802 & 3.710 $\cdot$ 10$^{-4}$ & 7529.529 \\ \hline
 			\textrm{Stal} & \textrm{Walec} & 1.138 & 1.800 & 1.470 $\cdot$ 10$^{-4}$ & 7741.496 \\ \hline
 			\textrm{Żeliwo szare} & \textrm{Walec otwarty} & 0.760 & 1.800 & 1.095$\cdot$ 10$^{-4}$ & 6940.639 \\ \hline
 			
@@ -169,26 +169,36 @@ V = 2lf
 		\label{Tabela1}	
 	\end{table}
 
+
 	\begin{table}[h!]
 	\centering
 		\begin{tabular}{|c|c|c|c|}
 			
-			\cline{1-2}
-			\multicolumn{2}{|l|}{\begin{tabular}{c} \textrm{Analiza Aluminium} $l = 0.561$ [m]\end{tabular}} & \multicolumn{2}{c}{}\\
-			\hline
-			\textrm{Nr harmonicznej} & \textrm{Częstotliwość} $f$ \textrm{[Hz]} & \textrm{Długość fali} $ \lambda$ \textrm{[m]} & \textrm{Prędkość fali} $\upsilon$ \textrm{[m/s]}  \\ 
-			\hline
-			1 & 2411.76 & 3,6 & 3567,21 \\ \hline
-			2  & 4941.18 & 1,8 & 3557,86 \\ \hline
-			3 & 7382.35  & 1,2 & 3579,54 \\ \hline
-			4 & 9823.53 & 0,9 & 3560,98 \\ \hline
-			5 & 4948,17 & 0,72 & 3562,68 \\ \hline
-			6 & 5924,12 & 0,6 & 3554,47 \\ \hline
+		\cline{1-2}
+	\multicolumn{2}{|l|}{\begin{tabular}{c} \textrm{Analiza Aluminium} $l = 0.561$ [m]\end{tabular}} & \multicolumn{2}{c}{}\\
+	\hline
+	\textrm{Nr harmonicznej} & \textrm{Częstotliwość} $f$ \textrm{[Hz]} & \textrm{Długość fali} $ \lambda$ \textrm{[m]} & \textrm{Prędkość fali} $\upsilon$ \textrm{[m/s]}  \\ 
+		\hline
+		1 & 2411.76 & 1.122 & 2705.994 \\ \hline
+		2  & 4941.18 & 0.561 & 2772.001 \\ \hline
+		3 & 7382.35  & 0.374 & 2760.998 \\ \hline
+		4 & 9823.53 & 0.281 & 2760.411 \\ \hline
+
 		
 	\end{tabular}	
-		\caption{Wyniki obliczeń dla aluminium}
+		\caption{Wyniki pomiarów i obliczeń dla aluminium (z 4 pomiarów)}
 		\label{Tabela2}	
 	\end{table}
+
+	Prędkość średnia fali:
+	\begin{center}
+		$\upsilon_{sr} = 2749.851$ \textrm{[m/s]}
+	\end{center}
+	
+	Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (3) dla aluminium:
+	\begin{center}
+		\centering$E = 20.570$ [GPa]
+	\end{center}
 
 	%------------------------------------------------------------------------------------------------------
 	
@@ -197,21 +207,130 @@ V = 2lf
 		\begin{tabular}{|c|c|c|c|}
 		
 		\cline{1-2}
-		\multicolumn{2}{|l|}{\begin{tabular}{c} \textrm{Analiza Aluminium} $l = 0.561$ [m]\end{tabular}} & \multicolumn{2}{c}{}\\
+		\multicolumn{2}{|l|}{\begin{tabular}{c} \textrm{Analiza Mosiądzu} $l = 0.998$ [m]\end{tabular}} & \multicolumn{2}{c}{}\\
 		\hline
 		\textrm{Nr harmonicznej} & \textrm{Częstotliwość} $f$ \textrm{[Hz]} & \textrm{Długość fali} $ \lambda$ \textrm{[m]} & \textrm{Prędkość fali} $\upsilon$ \textrm{[m/s]}  \\ 
 		\hline
-		1 & 2411.76 & 3,6 & 3567,21 \\ \hline
-		2  & 4941.18 & 1,8 & 3557,86 \\ \hline
-		3 & 7382.35  & 1,2 & 3579,54 \\ \hline
-		4 & 9823.53 & 0,9 & 3560,98 \\ \hline
-		5 & 4948,17 & 0,72 & 3562,68 \\ \hline
-		6 & 5924,12 & 0,6 & 3554,47 \\ \hline
+		1 & 1776.47 & 1.996 & 3545.834 \\ \hline
+		2  & 3458.82 & 0.998 & 3451.902 \\ \hline
+		3 & 5152.94 & 0.665 & 3426.705 \\ \hline
+		4 & 6835.29 & 0.499 & 3410.810 \\ \hline
+		5 & 8653.53 & 0.399 & 3452.758 \\ \hline
+		6 & 10294.12 & 0.333 & 3427.942 \\ \hline
 		
 	\end{tabular}	
-	\caption{Wyniki obliczeń dla aluminium}
-	\label{Tabela2}	
+	\caption{Wyniki obliczeń dla mosiądzu}
+	\label{Tabela3}	
+	\end{table}
+	
+	Prędkość średnia fali:
+	\begin{center}
+		$\upsilon_{sr} = 3452.659$ \textrm{[m/s]}
+	\end{center}
+	
+	Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (3) dla mosiądzu:
+	\begin{center}
+		\centering$E = 100.15$ [GPa]
+	\end{center}
+
+	%----------------------------------------------------------------------------------------------------------
+
+	\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		
+		\cline{1-2}
+		\multicolumn{2}{|l|}{\begin{tabular}{c} \textrm{Analiza Stali nr 1} $l = 1.802$ [m]\end{tabular}} & \multicolumn{2}{c}{}\\
+		\hline
+		\textrm{Nr harmonicznej} & \textrm{Częstotliwość} $f$ \textrm{[Hz]} & \textrm{Długość fali} $ \lambda$ \textrm{[m]} & \textrm{Prędkość fali} $\upsilon$ \textrm{[m/s]}  \\ 
+		\hline
+		1 & 1400.00 & 3.604 & 5045.600 \\ \hline
+		2 & 2905.88 & 1.802 & 5236.396 \\ \hline
+		3 & 4305.88 & 1.201 & 5171.362 \\ \hline
+		4 & 6670.59 & 0.901 & 6010.202 \\ \hline
+		5 & 7905.88 & 0.721 & 5700.139 \\ \hline
+		6 & 8623.53 & 0.601 & 5182.742 \\ \hline
+		
+	\end{tabular}	
+	\caption{Wyniki obliczeń dla stali w kształcie prostopadłościanu}
+	\label{Tabela4}	
 \end{table}
+
+Prędkość średnia fali:
+\begin{center}
+	$\upsilon_{sr} = 5391.074$ \textrm{[m/s]}
+\end{center}
+
+Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (3) dla stali w kształcie prostopadłościanu:
+\begin{center}
+	\centering$E = 218.836$ [GPa]
+\end{center}
+
+	%----------------------------------------------------------------------------------------------------------	
+		
+	\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		
+		\cline{1-2}
+		\multicolumn{2}{|l|}{\begin{tabular}{c} \textrm{Analiza Stali nr 2} $l = 1.800$ [m]\end{tabular}} & \multicolumn{2}{c}{}\\
+		\hline
+		\textrm{Nr harmonicznej} & \textrm{Częstotliwość} $f$ \textrm{[Hz]} & \textrm{Długość fali} $ \lambda$ \textrm{[m]} & \textrm{Prędkość fali} $\upsilon$ \textrm{[m/s]}  \\ 
+		\hline
+		1 & 1400.00 & 3.600 & 5040.000 \\ \hline
+		2 & 2905.88 & 1.800 & 5230.584 \\ \hline
+		3 & 4305.88 & 1.200 & 5167.056 \\ \hline
+		4 & 5811.76 & 0.900 & 5230.584 \\ \hline
+		5 & 7211.78 & 0.720 & 5192.482 \\ \hline
+		6 & 8623.53 & 0.600 & 5174.118 \\ \hline
+		
+	\end{tabular}	
+	\caption{Wyniki obliczeń dla stali w kształcie prostopadłościanu}
+	\label{Tabela5}	
+\end{table}
+
+Prędkość średnia fali:
+\begin{center}
+	$\upsilon_{sr} = 5172.471$ \textrm{[m/s]}
+\end{center}
+
+Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (3) dla stali w kształcie walca:
+\begin{center}
+	\centering$E = 207.119$ [GPa]
+\end{center}	
+	
+	%----------------------------------------------------------------------------------------------------------	
+	
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|}
+		
+		\cline{1-2}
+		\multicolumn{2}{|l|}{\begin{tabular}{c} \textrm{Analiza Żeliwa Szarego} $l = 1.800$ [m]\end{tabular}} & \multicolumn{2}{c}{}\\
+		\hline
+		\textrm{Nr harmonicznej} & \textrm{Częstotliwość} $f$ \textrm{[Hz]} & \textrm{Długość fali} $ \lambda$ \textrm{[m]} & \textrm{Prędkość fali} $\upsilon$ \textrm{[m/s]}  \\ 
+		\hline
+		1 & 1023.53 & 3.600 & 3684.708 \\ \hline
+		2 & 2058.82 & 1.800 & 3705.876 \\ \hline
+		3 & 3082.35 & 1.200 & 3698.820 \\ \hline
+		4 & 4117.65 & 0.900 & 3705.885 \\ \hline
+		5 & 5152.94 & 0.720 & 3710.117 \\ \hline
+		6 & 6176.47 & 0.600 & 3705.882 \\ \hline
+		
+	\end{tabular}	
+	\caption{Wyniki obliczeń dla żeliwa szarego}
+	\label{Tabela6}	
+\end{table}
+
+Prędkość średnia fali:
+\begin{center}
+	$\upsilon_{sr} = 3701.881$ \textrm{[m/s]}
+\end{center}
+
+Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (3) dla żeliwa szarego w kształcie walca otwartego:
+\begin{center}
+	\centering$E = 95.114$ [GPa]
+\end{center}	
 	
 	%----------------------------------------------------------------------------------------------------------
 	
