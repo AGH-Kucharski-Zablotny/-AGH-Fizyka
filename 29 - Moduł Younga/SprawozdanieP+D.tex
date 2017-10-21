@@ -1,7 +1,8 @@
-% !Mode:: "TeX:UTF-8"
+%!Mode:: "TeX:UTF-8"
 \documentclass[a4paper,12pts]{article}
 
 \usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage{fontspec}
 \setmainfont{Calibri}
 
@@ -73,7 +74,7 @@
 	
 	\begin{figure}[!h]
 		\centering
-		\includegraphics[scale=0.5]{schemat}
+		\includegraphics[scale=0.3]{schemat}
 		\caption{Schemat układu pomiarowego}
 		\label{schematUkladu}
 	\end{figure}
@@ -140,12 +141,71 @@
 	\section{Opracowanie danych pomiarowych}
 	
 	%----------------------------------------------------------------------------------------------------------	
-
+	
 	\subsection{Wyniki pomiarów}
+	
+	Zmierzone wielkości zostały zapisane w tabeli 1, gdzie zapisano również wyniki wyliczonych wartości obliczonych za pomocą wzorów (3), (4), (5) i (6). 
+	
+		\begin{table}[h!]
+		\centering
+		\begin{tabular}{ | c | c | c | c | c | c | }
+			
+			\hline
+			\textrm{Materiał} & \textrm{Kształt} & \textrm{Masa [kg]} & \textrm{Długość [m]} & \textrm{Objętość [m$^2$]} & \textrm{Gęstość [kg/m$^3$]} \\ \hline
+			\textrm{Aluminium} & \textrm{Walec} & 0.030 & 0.561 & 1.102 $\cdot$ 10$^{-5}$ & 2720.326 \\ \hline
+			\textrm{Mosiądz} & \textrm{Walec} & 0.237 & 0.998 & 2.821 $\cdot$ 10$^{-5}$ & 8401.275 \\ \hline
+			\textrm{Stal} & \textrm{Prostopadłościan} & 1.802 & 1.252 & 3.710 $\cdot$ 10$^{-4}$ & 7529.529 \\ \hline
+			\textrm{Stal} & \textrm{Walec} & 1.138 & 1.800 & 1.470 $\cdot$ 10$^{-4}$ & 7741.496 \\ \hline
+			\textrm{Żeliwo szare} & \textrm{Walec otwarty} & 0.760 & 1.800 & 1.095$\cdot$ 10$^{-4}$ & 6940.639 \\ \hline
+			
+		\end{tabular}
+		\caption{Dane pomiarowe dla pięciu próbek}
+		\label{Tabela1}	
+	\end{table}
 
-	Zmierzone wielkości zostały zapisane w tabeli 1, gdzie zapisano również wyniki wyliczonych wartości obliczonych za pomocą wzorów (3), (4), (5) oraz (6). 
+	\begin{table}[h!]
+	\centering
+		\begin{tabular}{|c|c|c|c|}
+			
+			\cline{1-2}
+			\multicolumn{2}{|l|}{\begin{tabular}{c} \textrm{Analiza Aluminium} $l = 0.561$ [m]\end{tabular}} & \multicolumn{2}{c}{}\\
+			\hline
+			\textrm{Nr harmonicznej} & \textrm{Częstotliwość} $f$ \textrm{[Hz]} & \textrm{Długość fali} $ \lambda$ \textrm{[m]} & \textrm{Prędkość fali} $\upsilon$ \textrm{[m/s]}  \\ 
+			\hline
+			1 & 2411.76 & 3,6 & 3567,21 \\ \hline
+			2  & 4941.18 & 1,8 & 3557,86 \\ \hline
+			3 & 7382.35  & 1,2 & 3579,54 \\ \hline
+			4 & 9823.53 & 0,9 & 3560,98 \\ \hline
+			5 & 4948,17 & 0,72 & 3562,68 \\ \hline
+			6 & 5924,12 & 0,6 & 3554,47 \\ \hline
+		
+	\end{tabular}	
+		\caption{Wyniki obliczeń dla aluminium}
+		\label{Tabela2}	
+	\end{table}
+
+	%------------------------------------------------------------------------------------------------------
 	
-	
+	\begin{table}[h!]
+	\centering
+		\begin{tabular}{|c|c|c|c|}
+		
+		\cline{1-2}
+		\multicolumn{2}{|l|}{\begin{tabular}{c} \textrm{Analiza Aluminium} $l = 0.561$ [m]\end{tabular}} & \multicolumn{2}{c}{}\\
+		\hline
+		\textrm{Nr harmonicznej} & \textrm{Częstotliwość} $f$ \textrm{[Hz]} & \textrm{Długość fali} $ \lambda$ \textrm{[m]} & \textrm{Prędkość fali} $\upsilon$ \textrm{[m/s]}  \\ 
+		\hline
+		1 & 2411.76 & 3,6 & 3567,21 \\ \hline
+		2  & 4941.18 & 1,8 & 3557,86 \\ \hline
+		3 & 7382.35  & 1,2 & 3579,54 \\ \hline
+		4 & 9823.53 & 0,9 & 3560,98 \\ \hline
+		5 & 4948,17 & 0,72 & 3562,68 \\ \hline
+		6 & 5924,12 & 0,6 & 3554,47 \\ \hline
+		
+	\end{tabular}	
+	\caption{Wyniki obliczeń dla aluminium}
+	\label{Tabela2}	
+\end{table}
 	
 	%----------------------------------------------------------------------------------------------------------
 	
