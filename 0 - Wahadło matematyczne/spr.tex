@@ -50,7 +50,7 @@
 		\subsection{Wprowadzenie teoretyczne}
 	
 			\subsubsection{Niepewność pomiaru}
-			Niepewność pomiaru to parametr związany z wartościami pomiaru, które można w uzasadniony sposób przypisać wartości mierzonej, charakteryzujący szerokość przedziału rozrzutu wartości, w którym można z zadawalającym prawdopodobieństwem usytuować wartość wielkości mierzonej. Niepewność pomiaru nie wynika wyłącznie z czynnika ludzkiego bądź niedoskonałości przyrządów pomiarowych, ale jest nieodłączną cechą każdej operacji.
+			Niepewność pomiaru to parametr związany z wartościami pomiaru, które można w uzasadniony sposób przypisać wartości mierzonej, charakteryzujący szerokość przedziału rozrzutu wartości, w którym można z zadawalającym prawdopodobieństwem usytuować wartość wielkości mierzonej. Niepewność pomiaru nie wynika wyłącznie z czynnika ludzkiego bądź niedoskonałości przyrządów pomiarowych, ale jest nieodłączną cechą każdej operacji. Będziemy analizować niepewność typu A będąca niepewnością przy niemożności idealnego pomiaru czasu trwania wahania; niepewność typu B, którą wykorzystujemy przy jednokrotnym pomierze przyrządami pomiarowymi. Na całość wyniku zaważa niepewność złożona - wnikowa operacji na wielu wynikach obarczonych błędami, które sumarycznie tworzą nową wartość niepewności. Wzory dla tych typów niepewności zostaną podane i opisane w podrozdziale 3.3 - Analiza niepewności.
 			
 			\subsubsection{Wahadło matematyczne}
 			Wahadło matematyczne (wahadło proste) to ciało o masie punktowej zawieszone na nieważkiej i nierozciągliwej nici. W przypadku wychylenia z położenia równowagi, zaczyna się wahać w płaszczyźnie pionowej pod wpływem siły ciężkości. Wprowadzone jest wtedy w tzw. ruch drgający prosty, którego wzór na okres (słuszny dla jak najmniejszego wychylenia z punktu równowagi) jest określony jako funkcja długości wahadła $l$ oraz przyspieszenia ziemskiego $g$:
@@ -64,14 +64,15 @@
 		\begin{figure}[!h]
 			\centering
 			\includegraphics[scale=0.12]{wah.png}
-			\caption{Schemat wahadła matematycznego}
+			\caption{\centering Schemat wahadła matematycznego \\ { \textit{źródło: Pracownia Fizyczna WFiIS AGH - ,,Ćwiczenie nr 0: Opracowanie danych pomiarowych"}}}
 			\label{wahadlo}
 		\end{figure}
+	\newpage
 	
 %--------------------------------------------------------------------------------------------------------------
 	
 	\section{Wykonanie ćwiczenia}
-	
+	Ćwiczenie składa się z dwóch części - pomiarów dla zmiennej oraz niezmiennej długości nici. Wykonujemy te dwa kroki aby w lepszym stopniu oszacować wartość przyspieszenia ziemskiego oraz pokazać, że (w dopuszczalnym stopniu) wartość przyspieszenia ziemskiego nie zależy od długości wahadła.
 		\subsection{Pomiary okresu wahadła dla ustalonej długości nici}
 			\begin{itemize}
 				\item Pomiar długości wahadła od miejsca zaczepienia nici do środka ciężarka za pomocą przymiaru milimetrowego.
@@ -118,7 +119,7 @@
 	Z uzyskanych wyników obliczamy wartość średnią:
 	
 	\begin{equation}
-		T_{\textrm{śr}} = \frac{1}{n} \sum_{i = 1}^{n} T_i \approx 1.249
+		T_{\textrm{śr}} = \frac{1}{n} \sum_{i = 1}^{n} T_i \approx 1.249 \textrm{ s}
 	\end{equation}
 	Po podstawieniu uzyskanej wartości do wzoru na przyspieszenie grawitacyjne uzyskujemy:
 	
@@ -134,7 +135,7 @@
 	
 	Zbadany okres drgań w zależności od długości wahadła przedstawiono w tabeli \ref{tabela2}.
 	
-	\begin{table}[!hb]
+	\begin{table}[!ht]
 		\centering
 		\begin{array}{ | c | c | c | c | c | c | }
 			\hline
@@ -161,10 +162,11 @@
 
 	\begin{figure}[h!]
 		\centering
-		\includegraphics[scale=0.8]{T(l)}
+		\includegraphics[scale=1.1]{T(l)}
 		\caption{Wykres przedstawiający zależność $T(l)$}
 		\label{wykr1}
 	\end{figure}
+
 	Aby obliczyć przyspieszenie ziemskie posłużymy się krzywą regresji, dlatego przekształcamy wzór (1)	podnosząc obie strony do kwadratu:
 	\begin{equation}
 		T^2 = \frac{4 \pi^2}{g} l
@@ -173,19 +175,18 @@
 	\begin{equation}
 		a = \frac{4 \pi^2}{g}~~,~~b = 0
 	\end{equation}
-	Możemy teraz stowrzyć wykres $T^2(l)$ oraz za pomocą programu Excel możemy wyznaczyć wzór regresji liniowej.
+	Możemy teraz stowrzyć wykres $T^2(l)$ oraz za pomocą programu LibreOffice Calc możemy wyznaczyć wzór regresji liniowej przedstawiony na rysunku \ref{wykres:regresja}.
 	\begin{figure}[!h]
 		\centering
-		\includegraphics[scale=0.7]{regresja.png}
+		\includegraphics[scale=1.1]{regresja_Better.png}
 		\caption{Wykres $T^2(l)$ wraz z zaznaczoną regresją liniową}
+		\label{wykres:regresja}
 	\end{figure}
-
-
-	Podstawiając $a$ do wzoru funkcji jesteśmy w stanie obliczyć przyspieszenie ziemskie
+	
+	Podstawiając obliczone przez program $a = 4.083$ do wzoru funkcji jesteśmy w stanie obliczyć przyspieszenie ziemskie
 	\begin{equation}
 		g = \frac{4 \pi ^ 2}{a} \approx 9.665 ~\frac{\textrm{m}}{\textrm{s}^2}  
 	\end{equation}
-	
 	%----------------------------------------------------------------------------------------------------------	
 	
 	\subsection{Analiza niepewności}
@@ -200,20 +201,20 @@
 	\subsubsection{Niepewność pomiaru okresu drgań}
 	Z racji, że nie jesteśmy w stanie idealnie zmierzyć czasu trwania jednego okresu drgania przy stałej długości wahadła (czynnik refleksu ludzkiego) zastosujemy tutaj niepewność pomiarową typu A obliczając estymator odchylenia standardowego od średniego okresu
 	\begin{equation}
-		u(T) = \sqrt{\frac{\sum_{i=1}^{n}(T_i - T_{\textrm{śr}})^2}{n(n-1)}} \approx 0.006 \textrm{ s}
+		u(T) = \sqrt{\frac{\sum_{i=1}^{n}(T_i - T_{\textrm{śr}})^2}{n(n-1)}} \approx 0.00604 \textrm{ s}
 	\end{equation}
 	
 	\subsubsection{Niepewność złożona wyznaczania przyspieszenia ziemskiego - stała długość}
 	Ponieważ nasz pomiar jest złożony z wielu pomiarów obarczonych błędami stosujemy prawo przenoszenia niepewności:
 	\begin{equation}
-		u_c(g) = \sqrt{\left(\frac{\delta g}{\delta T}\right)^2 u(T)^2 + \left(\frac{\delta g}{\delta l}\right)^2 u(l)^2} \approx 0.099 ~\frac{\textrm{m}}{\textrm{s}^2}
+		u_c(g) = \sqrt{\left(\frac{\delta g}{\delta T}\right)^2 u(T)^2 + \left(\frac{\delta g}{\delta l}\right)^2 u(l)^2} \approx 0.1001 ~\frac{\textrm{m}}{\textrm{s}^2}
 	\end{equation}
 	Niepewność należy pomożyć razy $2$ aby uzyskać niepewność na długość przedziału:
 	\begin{equation}
-	U_c(g) = 2 \cdot u_c(g) \approx 0.199 ~\frac{\textrm{m}}{\textrm{s}^2}
+	U_c(g) = 2 \cdot u_c(g) \approx 0.2002 ~\frac{\textrm{m}}{\textrm{s}^2}
 	\end{equation}
 	Co wnioskuje wynikiem przyspieszenia ziemskiego dla stałej długości wahadła równą:
-	$$ g = (10.013 \pm 0.199) ~\frac{\textrm{m}}{\textrm{s}^2} $$
+	$$ g = (10.013 \pm 0.2002) ~\frac{\textrm{m}}{\textrm{s}^2} $$
 	Wartość tablicowa przyspieszenia ziemskiego wynosi $g = 9.811 ~\frac{\textrm{m}}{\textrm{s}^2}$ i nieznacznie nie mieści się w przedziale naszego wyniku.
 	
 	\subsubsection{Niepewność złożona wyznaczania przyspieszenia ziemskiego - zmienna długość}
@@ -236,11 +237,12 @@
 	$$ g = (9.665 \pm 0.056) ~\frac{\textrm{m}}{\textrm{s}^2} $$
 	Przyspieszenie ziemskie z tablic fizycznych:
 	$$ g = 9.811 ~\frac{\textrm{m}}{\textrm{s}^2} $$
+	Wartość przyspieszenia ziemskiego nie zależy od długości wahadła.
 
 %--------------------------------------------------------------------------------------------------------------
 
 	\section{Wnioski}
-	Przeprowadzenie ćwiczenia w laboratorium pozwoliło nam zapoznać się z typowymi metodami opracowywania danych pomiarowych oraz szacowaniem niepewności na podstawie zgromadzonych danych. 
-	Analizując tabele pomiarów okresów wahadła dostrzegamy rozrzut wartości. Wynika on z samego pojęcia niepewności pomiaru oraz czynnika ludzkiego. Końcowy wynik nie pokrywa się w stu procentach z wynikiem tablicowym, jednak mieści się w zadawalającym przedziale. Powodem mogłyby być błędy wykonywane w trakcie używania sekundomierza, ponieważ precyzyjny pomiar wymaga dokładniejszej aparatury oraz wprawy osoby jego wykonującej. Długość nici, okres wahań oraz eliptyczny tor ruchu ciężarka, utrudniał wykonanie precyzyjnych pomiarów.
+	Przeprowadzenie ćwiczenia w laboratorium pozwoliło nam zmierzyć wartosć przyspieszenia ziemskiego oraz zapoznać się z typowymi metodami opracowywania danych pomiarowych oraz szacowaniem niepewności na podstawie zgromadzonych danych. 
+	Analizując tabele pomiarów okresów wahadła dostrzegamy rozrzut wartości. Wynika on z samego pojęcia niepewności pomiaru, w tym czynnika ludzkiego. Końcowy wynik nie pokrywa się w stu procentach z wynikiem tablicowym, jednak mieści się w zadawalającym przedziale. Powodem mogłyby być błędy wykonywane w trakcie używania sekundomierza, ponieważ precyzyjny pomiar wymaga dokładniejszej aparatury oraz wprawy osoby jego wykonującej. Długość nici, okres wahań oraz eliptyczny tor ruchu ciężarka, utrudniał wykonanie precyzyjnych pomiarów.
 		
 \end{document}
