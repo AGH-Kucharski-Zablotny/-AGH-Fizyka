@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.25)  21 OCT 2017 21:12
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.25)  24 OCT 2017 00:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -457,11 +457,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 LaTeX Warning: Unused global option(s):
     [12pts].
 
-(./SprawozdanieP+D.aux
-
-LaTeX Warning: Label `Tabela5' multiply defined.
-
-)
+(./SprawozdanieP+D.aux)
 \openout1 = `SprawozdanieP+D.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -480,7 +476,8 @@ LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 26.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 26.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 26.
@@ -598,18 +595,25 @@ File: schemat.png Graphic file (type QTm)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6] [7] (./SprawozdanieP+D.aux)
+[6] [7]
+Overfull \hbox (39.92729pt too wide) detected at line 385
+\OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^Z\OT1/cmr/m/n/10 ) = [] =
+ []
+ []
 
-LaTeX Warning: There were multiply-defined labels.
 
- ) 
+Overfull \hbox (15.81248pt too wide) in paragraph at lines 421--426
+ [][] 
+ []
+
+[8] (./SprawozdanieP+D.aux) ) 
 Here is how much of TeX's memory you used:
- 15599 strings out of 493591
- 304773 string characters out of 6143546
+ 15602 strings out of 493591
+ 304800 string characters out of 6143546
  317505 words of memory out of 5000000
- 18930 multiletter control sequences out of 15000+600000
+ 18933 multiletter control sequences out of 15000+600000
  3800 words of font info for 34 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  48i,14n,61p,10376b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on SprawozdanieP+D.pdf (7 pages).
+Output written on SprawozdanieP+D.pdf (8 pages).
