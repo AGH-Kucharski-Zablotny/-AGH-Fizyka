@@ -57,23 +57,38 @@ Fala podłóżna jest to fala powstająca przez gwałtowne wychylenie ciała z p
 \subsection{Fala stojąca}
 Fala, której grzbiety i doliny nie przemieszaczją się. Powstaje na skutek interferencji dwóch takich samych fal podłużnych, w przypadku pręta przez odbicie fali o przeciwległy koniec do uderzonego młotkiem. Falę stojącą określa się równaniem:
 \begin{equation}
-y = 2A \sin kx
+y(x) = 2A \sin kx
 \end{equation}
+gdzie $A$ to amplituda fali wynikającej z uderzenia.
 
 \subsubsection{Moduł Younga}
 Nazywana również modułem odkształcalności liniowej - wielkość charakteryzującą sprężystość materiału, będąca jego integralną częścią nazywamy modułem Younga oraz oznaczamy go jako $E$. Ogólny wzór na moduł Younga określa się jako stosunek naprężenia $\sigma$ do względnego odkszałcenia liniowego $\varepsilon$ materiału:
 \begin{equation}
 E = \frac{\sigma}{\varepsilon}
 \end{equation}
-Po uwzględnieniu, że ćwiczenie przeprowadzane jest na prętach różnych materiałów, interferencji fali padającej i fali odbitej oraz prawa Hooke'a uzyskujemy wzór:
+Po uwzględnieniu ruchu fali w pręcie, skorzystaniu z prawa Hooke'a i przekształceniach otrzymujemy, że moduł Younga jest zależny od gęstości ciała i kwadratu prędkości rozchodzenia sie fali w nim, co przedstawia wzór:
+\begin{equation}
+	E = \rho v^2
+\end{equation}
+co po uzględnieniu, że fala padająca i odbita interferują ze sobą daje:
 \begin{equation}
 E = 4 \rho l^2 f^2
 \end{equation}
 gdzie $\rho$ to gęstość materiału, $l$ - odległość między węzłami fali oraz $f$ częstotliwość fali podłużnej. Tego wzoru będziemy używać do wykonania ćwiczenia.
 
+\subsubsection{Interferencja fal}
+Jest to zjawisko ,,łączenia się"~dwóch lub więcej fal tej samej częstotliwości w wyniku ich superpozycji. Efektem jest powstanie fali o nowej amplitudzie, lecz tej samej częstotliwości - wszystkie fale łączą się w jedną. Warunkiem potrzebnym do zajścia interferencji jest spójność fal (korelacja faz i równość częstotliwości). Matematycznie falę taką określamy wzorem:
+\begin{equation}
+	y(t) = A\sin (\omega t + \phi_1) + A \sin (\omega t + \phi_2)
+\end{equation}
+gdzie $A$ to amplituda fal, $\phi_1$, $\phi_2$ - fazy początkowe.
 
-\subsubsection{Analiza Fouriera}
-Jest to proces badania drgań harmonicznych, polega na przedstawieniu funkcji okresowej w postaci nieskończonego szeregu trygonometrycznego (szeregu Fouriera). W naszym doświadczeniu wykorzystujemy program Zelscope, który realizuje algorytm FFT pozwalający na szybkie obliczenie transformaty Fouriera i przedstawia ją jako widmo fali na ekranie (analogicznie do oscyloskopu znanego z elektroniki). Będziemy odczytywać kolejne wartości drgań harmonicznych z ekranu.
+\subsubsection{Analiza Fouriera i szybka transformata Fouriera}
+Jest to proces badania drgań harmonicznych, polega na przedstawieniu funkcji okresowej w postaci nieskończonego szeregu trygonometrycznego (szeregu Fouriera). W naszym doświadczeniu wykorzystujemy program Zelscope, który realizuje algorytm FFT (obliczający transformatę Fouriera) i przedstawia ją jako widmo fali na ekranie (analogicznie do oscyloskopu znanego z elektroniki). Szybka transformata Fouriera to algorytm obliczający dyskretną transformatę Fouriera określoną wzorem:
+\begin{equation}
+	X_k = \sum_{n=0}^{N-1} x_ne^{-\frac{2 \pi i}{N}nk}
+\end{equation} 
+dla $k = 0, ..., N-1$. Będziemy odczytywać kolejne wartości drgań harmonicznych z ekranu.
 
 \subsubsection{Niepewności pomiarowe}
 Podczas naszego doświadczenia będziemy analizować wyniki z niepewnościami pomiarowymi typu A (związane z niedokładnością przyrządów pomiarowych, oczytywana ze specyfikacji produktu) oraz B (spowodowane wieloma pomiarami, które każde obarczone jest błędem). Są one spowodowane hałasem otoczenia podczas wykonywania pomiaru widma fali dźwiękowej, wielokrotnym pomiarom tej wielkości, złym refleksem osoby zamrażającej pomiar programu Zelscope oraz niedokładnością przyrządów pomiarowych takich jak suwmiara, miara zwijana czy też waga. Wiele nieudanych prób pozyskania widma fali harmonicznej została pominięta, ponieważ nie wnoszą one niczego do wyników doświadczenia. Dodatkowym czynnikiem wpływającym na niedokładność wyników jest wykorzystanie ciał nie wykonanych całkowicie z danego materiału, lecz zawierających pewne czynniki zaburzające, np. naklejkę. Następną obliczaną niepewnością jest niepewność złożona z racji obliczania kolejnych wartości z wielkości, które już są obarczone pewnym błędem. Wszelkie wzory zostaną przedstawione w rozdziale 3.2
@@ -155,7 +170,7 @@ V = 2lf
 	
 	\subsection{Wyniki pomiarów}
 	
-	Zmierzone wielkości próbek zostały zapisane w tabeli 1, gdzie zapisano również wyniki wyliczonych wartości obliczonych za pomocą wzorów (3), (4), (5) i (6). W kolejnych tabelach przestawione zostaną wyniki pomiarów zarejestrowanych częstotliwości dla kolejnych harmonicznych każdego materiału.
+	Zmierzone wielkości próbek zostały zapisane w tabeli 1, gdzie zapisano również wyniki wyliczonych wartości obliczonych za pomocą wzorów (7), (8), (9), (10) i (13). W kolejnych tabelach przestawione zostaną wyniki pomiarów zarejestrowanych częstotliwości dla kolejnych harmonicznych każdego materiału.
 	
 		\begin{table}[h!]
 		\centering
@@ -200,7 +215,7 @@ V = 2lf
 		$\upsilon_{sr} = 2749.851$ \textrm{[m/s]}
 	\end{center}
 	
-	Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (3) dla aluminium:
+	Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (4) dla aluminium:
 	\begin{center}
 		\centering$E = 20.570$ [GPa]
 	\end{center}
@@ -236,7 +251,7 @@ V = 2lf
 	\end{center}
 	
 	\begin{flushleft}
-	Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (3) dla mosiądzu:
+	Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (4) dla mosiądzu:
 	\end{flushleft}
 	\begin{center}
 		\centering$E = 100.152$ [GPa]
@@ -273,7 +288,7 @@ V = 2lf
 \end{center}
 
 \begin{flushleft}
-	Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (3) dla stali w kształcie prostopadłościanu:
+	Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (4) dla stali w kształcie prostopadłościanu:
 \end{flushleft}
 \begin{center}
 	\centering$E = 218.836$ [GPa]
@@ -310,7 +325,7 @@ V = 2lf
 \end{center}
 
 \begin{flushleft}
-	Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (3) dla stali w kształcie walca:
+	Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (4) dla stali w kształcie walca:
 \end{flushleft}
 \begin{center}
 	\centering$E = 207.119$ [GPa]
@@ -348,7 +363,7 @@ V = 2lf
 	\end{center}
 	
 	\begin{flushleft}
-		Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (3) dla żeliwa szarego w kształcie walca otwartego:
+		Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (4) dla żeliwa szarego w kształcie walca otwartego:
 	\end{flushleft}
 	
 	\begin{center}
