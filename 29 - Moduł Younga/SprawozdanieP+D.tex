@@ -76,7 +76,8 @@ gdzie $\rho$ to gęstość materiału, $l$ - odległość między węzłami fali
 Jest to proces badania drgań harmonicznych, polega na przedstawieniu funkcji okresowej w postaci nieskończonego szeregu trygonometrycznego (szeregu Fouriera). W naszym doświadczeniu wykorzystujemy program Zelscope, który realizuje algorytm FFT pozwalający na szybkie obliczenie transformaty Fouriera i przedstawia ją jako widmo fali na ekranie (analogicznie do oscyloskopu znanego z elektroniki). Będziemy odczytywać kolejne wartości drgań harmonicznych z ekranu.
 
 \subsubsection{Niepewności pomiarowe}
-Podczas naszego doświadczenia będziemy analizować wyniki z niepewnościami pomiarowymi typu A (związane z niedokładnością przyrządów pomiarowych oczytywana ze specyfikacji produktu) oraz B (związane z wieloma pomiarami, które każde obarczone są błędem). Są one spowodowane hałasem otoczenia podczas wykonywania pomiaru widma fali dźwiękowej, wielokrotnym pomiarom tej wielkości, spowodowane złym refleksem osoby zamrażającej pomiar programu Zelscope oraz niedokładnością przyrządów pomiarowych takich jak suwmiara, miara zwijana czy też waga. Wiele nieudanych prób pozyskania widma fali harmonicznej została pominięta, ponieważ nie wnoszą one niczego do wyników doświadczenia. Następną obliczaną niepewnością jest niepewność złożona z racji obliczania kolejnych wartości z wielkości, które już są obarczone pewnym błędem. Wszelkie wzory zostaną przedstawione w rozdziale 3.2
+Podczas naszego doświadczenia będziemy analizować wyniki z niepewnościami pomiarowymi typu A (związane z niedokładnością przyrządów pomiarowych, oczytywana ze specyfikacji produktu) oraz B (spowodowane wieloma pomiarami, które każde obarczone jest błędem). Są one spowodowane hałasem otoczenia podczas wykonywania pomiaru widma fali dźwiękowej, wielokrotnym pomiarom tej wielkości, złym refleksem osoby zamrażającej pomiar programu Zelscope oraz niedokładnością przyrządów pomiarowych takich jak suwmiara, miara zwijana czy też waga. Wiele nieudanych prób pozyskania widma fali harmonicznej została pominięta, ponieważ nie wnoszą one niczego do wyników doświadczenia. Dodatkowym czynnikiem wpływającym na niedokładność wyników jest wykorzystanie ciał nie wykonanych całkowicie z danego materiału, lecz zawierających pewne czynniki zaburzające, np. naklejkę. Następną obliczaną niepewnością jest niepewność złożona z racji obliczania kolejnych wartości z wielkości, które już są obarczone pewnym błędem. Wszelkie wzory zostaną przedstawione w rozdziale 3.2
+
 
 \subsection{Układ pomiarowy}
 Układ pomiarowy składa się z komputera z zainstalowanym oprogramowaniem Zelscope, mikrofonu podłączonego do komuptera, długich prętów wykonanych z różnych materiałów zawieszonych na nitkach w dwóch miejscach. Do wprawienia ciał w drgania użyjemy młotka, do pomiaru długości prętów użyjemy miary milimetrowej zwijanej, do pomiaru masy prętów użyjemy wagi elektronicznej firmy RAWAG model WTB 200 oraz do zmierzenia grubości materiałów w celu wyznaczenia ich objętości użyjemy suwmiarki.
@@ -238,7 +239,7 @@ V = 2lf
 	Z podanych wartości możemy obliczyć wartość modułu Young'a ze wzoru (3) dla mosiądzu:
 	\end{flushleft}
 	\begin{center}
-		\centering$E = 100.15$ [GPa]
+		\centering$E = 100.152$ [GPa]
 	\end{center}
 
 	%----------------------------------------------------------------------------------------------------------
@@ -432,11 +433,34 @@ V = 2lf
 	\end{table}
 	
 %--------------------------------------------------------------------------------------------------------------
+\newpage
+\section{Podsumowanie otrzymanych wyników końcowych}
+	
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		
+		\hline
+		Materiał & \begin{tabular}{c} Wartość tabelaryczna  \\ \textrm{[GPa]}  \end{tabular}  & \begin{tabular}{c} Wartość wyznaczona  \\  \textrm{[GPa]}  \end{tabular} \\
+		\hline
+		Aluminium & 69 & 20.570 \\[0.3ex] \hline
+		Mosiądz & 100  & 100.152 \\[0.3ex] \hline
+		Stal nr 1 & 205-210 & 218.836 \\[0.3ex] \hline
+		Stal nr 2 & 205-210  & 207.119 \\[0.3ex] \hline
+		Żeliwo szare & 125 & 95.114 \\[0.3ex] \hline
 
-	\section{Podsumowanie}
+	\end{tabular}
+	\caption{Porównanie wartości tabelaryczych z otrzymanymi podczas wykonywania doświadczenia}
+	\label{Tabela10}	
+\end{table}
+
+\flushleft
+W powyższej tabeli porównano wartości tabelaryczne z wartości wyznaczonymi. Przy rozszerzonej niepewności pomiaru (dla $k = 2$), wyniki mosiądzu oraz stali nr 1 i 2 zgadzają się z wartościami tabelarycznymi. Wartości otrzymane dla aluminium i żeliwa szarego znacznie odbiegają od wartości tabelarycznej. Spowodowane jest to wadliwymi próbkami pomiarowymi (widocznie zanieczyszczonymi oraz odgiętymi), niedokładnymi pomiarami. Wynik końcowy aluminium uznajemy ostatecznie za błąd gruby.
+	
 
 %--------------------------------------------------------------------------------------------------------------
 
 	\section{Wnioski}
+		Przeprowadzone doświadczenie pozwoliło nam na nabranie doświadczenia w pomiarach związanych z dźwiękiem, pomiarów wymiarów fizycznych ciał oraz finalnie zbadanie modułu Younga dla różnych materiałów. Z racji, że dwa z mierzonych ciał wykonane były z tego samego materiału (stal), lecz o różnym kształcie, dowiedliśmy się, że (w granicy dopuszczalnego błędu) kształt ciała nie ma wpływu na wartość modułu Younga. Niepewności pomiarowe wywodzą się z hałasu otoczenia w sali laboratoryjnej oraz zastosowania mikrofonu nie najwyższej jakości. Dodatkowo mogą one wynikać z problemów z zatrzymaniem odczytu programu Zelscope w momencie, w którym najlepiej widać w jakich częstotliwościach występują kolejne harmoniczne widma fali dźwiękowej, co prowadziło do wielokrotnego powtarzania pomiaru. Wszelkie niedoskonałości czy zabrudzenia materiałów również miały wpływ na wynik końcowy. Na szczególną uwagę zasługuje badane aluminium, którego wynik zdecydowanie odbiega od wartości tablicowych i uznajemy go za niewłaściwy. Sam pręt wyróżniał się wśród wszystkich mierzonych swoją krzywizną, miał naklejoną nalepkę na jednym z końców oraz jego przekrój nie tworzył idealnego koła. Aby osiągnąć najdokładniejszy wynik należy zadbać o jak najlepszą jakość badanych ciał.
 	
 \end{document}
