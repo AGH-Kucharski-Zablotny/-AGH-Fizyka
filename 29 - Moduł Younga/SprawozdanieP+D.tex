@@ -75,6 +75,9 @@ gdzie $\rho$ to gęstość materiału, $l$ - odległość między węzłami fali
 \subsubsection{Analiza Fouriera}
 Jest to proces badania drgań harmonicznych, polega na przedstawieniu funkcji okresowej w postaci nieskończonego szeregu trygonometrycznego (szeregu Fouriera). W naszym doświadczeniu wykorzystujemy program Zelscope, który realizuje algorytm FFT pozwalający na szybkie obliczenie transformaty Fouriera i przedstawia ją jako widmo fali na ekranie (analogicznie do oscyloskopu znanego z elektroniki). Będziemy odczytywać kolejne wartości drgań harmonicznych z ekranu.
 
+\subsubsection{Niepewności pomiarowe}
+Podczas naszego doświadczenia będziemy analizować wyniki z niepewnościami pomiarowymi typu A (związane z niedokładnością przyrządów pomiarowych oczytywana ze specyfikacji produktu) oraz B (związane z wieloma pomiarami, które każde obarczone są błędem). Są one spowodowane hałasem otoczenia podczas wykonywania pomiaru widma fali dźwiękowej, wielokrotnym pomiarom tej wielkości, spowodowane złym refleksem osoby zamrażającej pomiar programu Zelscope oraz niedokładnością przyrządów pomiarowych takich jak suwmiara, miara zwijana czy też waga. Wiele nieudanych prób pozyskania widma fali harmonicznej została pominięta, ponieważ nie wnoszą one niczego do wyników doświadczenia. Następną obliczaną niepewnością jest niepewność złożona z racji obliczania kolejnych wartości z wielkości, które już są obarczone pewnym błędem. Wszelkie wzory zostaną przedstawione w rozdziale 3.2
+
 \subsection{Układ pomiarowy}
 Układ pomiarowy składa się z komputera z zainstalowanym oprogramowaniem Zelscope, mikrofonu podłączonego do komuptera, długich prętów wykonanych z różnych materiałów zawieszonych na nitkach w dwóch miejscach. Do wprawienia ciał w drgania użyjemy młotka, do pomiaru długości prętów użyjemy miary milimetrowej zwijanej, do pomiaru masy prętów użyjemy wagi elektronicznej firmy RAWAG model WTB 200 oraz do zmierzenia grubości materiałów w celu wyznaczenia ich objętości użyjemy suwmiarki.
 
@@ -87,7 +90,7 @@ Układ pomiarowy składa się z komputera z zainstalowanym oprogramowaniem Zelsc
 
 %--------------------------------------------------------------------------------------------------------------
 
-\section{Wykonanie ćwiczenia}
+\newpage \section{Wykonanie ćwiczenia}
 Wykonanie ćwiczenia dzieli się na dwa kroki stosowane dla każdego badanego pręta oraz jednej wspólnej analizy wyników.
 \subsection{Pomiary specyfikacji prętów}
 \begin{itemize}
@@ -96,7 +99,7 @@ Wykonanie ćwiczenia dzieli się na dwa kroki stosowane dla każdego badanego pr
 	\item Zważenie pręta w najlepszy możliwy sposób za pomocą wagi elektronicznej.
 	\item Zapisanie wyników o danym ciele do tabeli.
 \end{itemize}
-\newpage
+
 \subsection{Pomiar częstotliwości harmonicznych}
 \begin{itemize}
 	\item Osadzenie preta w niciach zamontowanych do stelaża.
@@ -107,6 +110,7 @@ Wykonanie ćwiczenia dzieli się na dwa kroki stosowane dla każdego badanego pr
 \end{itemize}
 W przypadku niejednoznacznego odczytu częstotliwości harmonicznych nalezy powtórzyć pomiar.
 
+\newpage
 \subsection{Oblicznanie koniecznych wartości}
 Z zapisanych danych pomiarowych należy obliczyć gęstość ciała daną wzorem:
 \begin{equation}
@@ -190,7 +194,7 @@ V = 2lf
 		\label{Tabela2}	
 	\end{table}
 
-	Prędkość średnia fali:
+	Prędkość średnia fali dla aluminium:
 	\begin{center}
 		$\upsilon_{sr} = 2749.851$ \textrm{[m/s]}
 	\end{center}
@@ -224,7 +228,7 @@ V = 2lf
 	\end{table}
 	
 	\begin{flushleft}
-		Prędkość średnia fali:
+		Prędkość średnia fali dla mosiądzu:
 	\end{flushleft}
 	\begin{center}
 		$\upsilon_{sr} = 3452.659$ \textrm{[m/s]}
@@ -261,7 +265,7 @@ V = 2lf
 \end{table}
 
 \begin{flushleft}
-	Prędkość średnia fali:
+	Prędkość średnia fali dla stali nr 1:
 \end{flushleft}
 \begin{center}
 	$\upsilon_{sr} = 5391.074$ \textrm{[m/s]}
@@ -298,7 +302,7 @@ V = 2lf
 \end{table}
 
 \begin{flushleft}
-	Prędkość średnia fali:
+	Prędkość średnia fali dla stali nr 2:
 \end{flushleft}
 \begin{center}
 	$\upsilon_{sr} = 5172.471$ \textrm{[m/s]}
@@ -336,7 +340,7 @@ V = 2lf
 
 	\newpage
 	\begin{flushleft}
-		Prędkość średnia fali:
+		Prędkość średnia fali dla żeliwa szarego:
 	\end{flushleft}
 	\begin{center}
 		$\upsilon_{sr} = 3701.881$ \textrm{[m/s]}
