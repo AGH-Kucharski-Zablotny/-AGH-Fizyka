@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.25)  24 OCT 2017 22:22
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.25)  24 OCT 2017 22:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**SprawozdanieP+D.tex
-(./SprawozdanieP+D.tex
+**"Sprawozdanie 29 - Kucharski, Zabłotny.tex"
+(./Sprawozdanie 29 - Kucharski, Zabłotny.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
@@ -457,8 +457,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 LaTeX Warning: Unused global option(s):
     [12pts].
 
-(./SprawozdanieP+D.aux)
-\openout1 = `SprawozdanieP+D.aux'.
+(./Sprawozdanie 29 - Kucharski, Zabłotny.aux)
+\openout1 = `"Sprawozdanie 29 - Kucharski, Zabłotny.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
@@ -600,14 +600,14 @@ Overfull \hbox (15.81248pt too wide) in paragraph at lines 426--431
  [][] 
  []
 
-[9] [10] (./SprawozdanieP+D.aux) ) 
+[9] [10] (./Sprawozdanie 29 - Kucharski, Zabłotny.aux) ) 
 Here is how much of TeX's memory you used:
- 15603 strings out of 493591
- 304810 string characters out of 6143546
- 317505 words of memory out of 5000000
- 18934 multiletter control sequences out of 15000+600000
- 3800 words of font info for 34 fonts, out of 8000000 for 9000
+ 15605 strings out of 493591
+ 305090 string characters out of 6143546
+ 317529 words of memory out of 5000000
+ 18935 multiletter control sequences out of 15000+600000
+ 3808 words of font info for 35 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 48i,14n,61p,10376b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,14n,61p,10400b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on SprawozdanieP+D.pdf (10 pages).
+Output written on Sprawozdanie 29 - Kucharski, Zabłotny.pdf (10 pages).
