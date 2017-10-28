@@ -31,12 +31,12 @@
 		Dominik Zabłotny \\
 		\vspace*{\fill}
 		%-----------NUMER CWICZENIA--------%
-		{\large \textbf{Sprawozdanie z ćwiczenia nr 0} } \\
+		{\large \textbf{Sprawozdanie z ćwiczenia nr 32} } \\
 		%-----------TEMAT ĆWICZENIA--------%
-		Wyznaczanie przyspieszenia ziemskiego za pomocą wahadła matematycznego.		
+		Mostek Wheatstone'a		
 		\vfill	
 		%-----------DATA-------------%
-		11 października 2017r
+		25 października 2017r
 	\end{flushleft}
 	
 	\newpage
@@ -56,16 +56,16 @@
 	\begin{equation}
 		l = 100 \textrm{ cm}
 	\end{equation}
-	Rezystancję z danych podanych w tabelach obliczamy za pomocą wzoru \ref{wzor:opornosc}. Krok zmiany znanej rezystancji został dostosowany do danego opornika aby zmiana wychylenia na mikroamperomierza była zauważalna.
+	Rezystancja z danych podanych w tabelach zostaje obliczona za pomocą wzoru \ref{wzor:opornosc}. Krok zmiany znanej rezystancji został dostosowany do danego opornika aby zmiana wychylenia mikroamperomierza była zauważalna.
 	
-	\subsection{Pomiar dla opornika $R_1$}
+	\subsection{Pomiar dla opornika 1}
 	W tabeli \ref{tabela:opornik1} zestawiono pomiary przeprowadzone dla opornika 1. Przyjęty został krok zmiany znanej rezystancji $0.5 ~\Omega$.
 	
 	\begin{table}[!h]
 		\centering
 		\resizebox{\textwidth}{!}{\begin{tabular}{| c | c | c | c | c | c | c | c | c | c | c |}
 			\hline
-			Rezystancja opornika znanego [$\Omega$] & 12.5 & 13.0 & 13.5 & 14.0 & 14.5 & 12.0 & 11.5 & 11 & 10.5 & 10  \\ \hline
+			Rezystancja opornika znanego $R$ [$\Omega$] & 12.5 & 13.0 & 13.5 & 14.0 & 14.5 & 12.0 & 11.5 & 11 & 10.5 & 10  \\ \hline
 			Długość  $a$ [mm] & 500 & 491 & 482 & 473 & 464 & 510 & 519 & 529 & 543 & 555 \\ \hline
 			Opór $R_1$ obliczona [$\Omega$] & 12.50 & 12.54 & 12.56 & 12.57 & 12.55 & 12.49 & 12.41 & 12.35 & 12.48 & 12.47 \\ \hline
 		\end{tabular}}
@@ -80,14 +80,14 @@
 	
 	%----------------------------------------------------------------------------------------------------------	
 	
-	\subsection{Pomiar dla opornika $R_2$}
+	\subsection{Pomiar dla opornika 2}
 	W tabeli \ref{tabela:opornik2} zestawiono pomiary przeprowadzone dla opornika 2. Przyjęty został krok zmiany znanej rezystancji $1 ~\Omega$ z wyjątkiem pierwszego pomiaru dla $a = 500$ mm (celem uzyskania wyniku równego rezystancji znanej).
 	
 	\begin{table}[!h]
 		\centering
 		\resizebox{\textwidth}{!}{\begin{tabular}{| c | c | c | c | c | c | c | c | c | c | c |}
 			\hline
-			Rezystancja opornika znanego [$\Omega$] & 35.8 & 36.0 & 37.0 & 38.0 & 39.0 & 35.0 & 34.0 & 33.0 & 32.0 & 31.0  \\ \hline
+			Rezystancja opornika znanego $R$ [$\Omega$] & 35.8 & 36.0 & 37.0 & 38.0 & 39.0 & 35.0 & 34.0 & 33.0 & 32.0 & 31.0  \\ \hline
 			Długość  $a$ [mm] & 500 & 494 & 487 & 480 & 473 & 502 & 509 & 517 & 524 & 533 \\ \hline
 			Opór $R_2$ obliczona [$\Omega$] & 35.80 & 35.15 & 35.12 & 35.08 & 35.00 & 35.28 & 35.25 & 35.32 & 35.23 & 35.38 \\ \hline
 		\end{tabular}}
@@ -102,14 +102,14 @@
 	
 	%----------------------------------------------------------------------------------------------------------
 	
-	\subsection{Pomiar dla opornika $R_3$}
+	\subsection{Pomiar dla opornika 3}
 	W tabeli \ref{tabela:opornik3} zestawiono pomiary przeprowadzone dla opornika 3. Przyjęty został krok zmiany znanej rezystancji $2 ~\Omega$ z wyjątkiem pierwszego pomiaru dla $a = 500$ mm (celem uzyskania wyniku równego rezystancji znanej).
 	
 	\begin{table}[!h]
 		\centering
 		\resizebox{\textwidth}{!}{\begin{tabular}{| c | c | c | c | c | c | c | c | c | c | c |}
 			\hline
-			Rezystancja opornika znanego [$\Omega$] & 72.1 & 74.0 & 76.0 & 78.0 & 80.0 & 70.0 & 68.0 & 66.0 & 64.0 & 62.0  \\ \hline
+			Rezystancja opornika znanego $R$ [$\Omega$] & 72.1 & 74.0 & 76.0 & 78.0 & 80.0 & 70.0 & 68.0 & 66.0 & 64.0 & 62.0  \\ \hline
 			Długość  $a$ [mm] & 500 & 491 & 481 & 476 & 469 & 506 & 508 & 513 & 520 & 527 \\ \hline
 			Opór $R_3$ obliczona [$\Omega$] & 72.10 & 71.38 & 70.44 & 70.85 & 70.66 & 71.70 & 70.21 & 69.52 & 69.33 & 69.08 \\ \hline
 		\end{tabular}}
@@ -124,14 +124,21 @@
 	
 	%----------------------------------------------------------------------------------------------------------
 	
-	\subsection{Pomiar dla połączenia szeregowego}
+	\subsection{Połączenie szeregowe}
+	\subsubsection{Obliczenie rezystancji}
+	W połaczeniu szeregowym opór zastępczy jest równy sumie oporów rezystorów na połączeniu, stąd wynika, że mierzony opór powinien wynosić:
+	\begin{equation}
+		R_{s_{obl}} = R_1 + R_2 + R_3 = 118.28~\Omega
+	\end{equation}
+	
+	\subsubsection{Pomiar rezystancji}
 	W tabeli \ref{tabela:szeregowe} zestawiono pomiary przeprowadzone połączenia szeregowego oporników $R_1$, $R_2$, $R_3$. Przyjęty został krok zmiany znanej rezystancji $5 ~\Omega$ z wyjątkiem pierwszego pomiaru dla $a = 500$ mm (celem uzyskania wyniku równego rezystancji znanej).
 	
 	\begin{table}[!h]
 		\centering
 		\resizebox{\textwidth}{!}{\begin{tabular}{| c | c | c | c | c | c | c | c | c | c | c |}
 			\hline
-			Rezystancja opornika znanego [$\Omega$] & 116.3 & 120.0 & 125.0 & 130.0 & 135.0 & 110.0 & 105.0 & 100.0 & 95.0 & 90  \\ \hline
+			Rezystancja opornika znanego $R$ [$\Omega$] & 116.3 & 120.0 & 125.0 & 130.0 & 135.0 & 110.0 & 105.0 & 100.0 & 95.0 & 90  \\ \hline
 			Długość  $a$ [mm] & 500 & 496 & 484 & 474 & 465 & 514 & 526 & 538 & 554 & 568 \\ \hline
 			Opór $R_{s}$ obliczona [$\Omega$] & 116.30 & 118.10 & 117.25 & 117.15 & 117.34 & 116.34 & 116.52 & 116.45 & 118.00 & 118.33 \\ \hline
 		\end{tabular}}
@@ -146,14 +153,21 @@
 	
 	%----------------------------------------------------------------------------------------------------------
 	
-	\subsection{Pomiar dla połączenia równoległego}
+	\subsection{Połączenie równoległe}
+	\subsubsection{Obliczenie rezystancji}
+	W połaczeniu równoległym opór zastępczy jest równy odwrotności sumy odwrotności oporów rezysotrów układu. Wynika stąd, że spodziewana oporność połączenia będzie wynosić:
+	\begin{equation}
+		R_{r_{obl}} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}} \approx 8.16~\Omega 
+	\end{equation}
+	
+	\subsubsection{Pomiar rezystancji}
 	W tabeli \ref{tabela:rownolegle} zestawiono pomiary przeprowadzone połączenia równoległego oporników $R_1$, $R_2$, $R_3$. Przyjęty został krok zmiany znanej rezystancji $0.5 ~\Omega$ z wyjątkiem pierwszego pomiaru dla $a = 500$ mm (celem uzyskania wyniku równego rezystancji znanej).
 	
 	\begin{table}[!h]
 		\centering
 		\resizebox{\textwidth}{!}{\begin{tabular}{| c | c | c | c | c | c | c | c | c | c | c |}
 				\hline
-				Rezystancja opornika znanego [$\Omega$] & 8.0 & 8.5 & 9.0 & 9.5 & 10.0 & 7.5 & 7.0 & 6.5 & 6.0 & 5.5  \\ \hline
+				Rezystancja opornika znanego $R$ [$\Omega$] & 8.0 & 8.5 & 9.0 & 9.5 & 10.0 & 7.5 & 7.0 & 6.5 & 6.0 & 5.5  \\ \hline
 				Długość  $a$ [mm] & 500 & 485 & 472 & 459 & 450 & 519 & 534 & 552 & 557 & 596 \\ \hline
 				Opór $R_{r}$ obliczona [$\Omega$] & 8.0 & 8.0 & 8.05 & 8.06 & 8.18 & 8.09 & 8.02 & 8.01 & 7.95 & 8.11 \\ \hline
 		\end{tabular}}
@@ -181,11 +195,79 @@
 	
 	\subsubsection{Niepewność pomiarowa opornika o znanej rezystancji}
 	
-	Oporność rezystora jest ściśle określona oraz możliwa do regulacji pokrętłami na obudowie urządzenia. Niestety, urządzenie nie oferowało żadnej podanej niepewności na tabliczce znamionowej, przez co musimy przyjąć, że ustawiona rezystancja nie jest obarczona żadnym błędem. Jest to nieprawdziwe, ponieważ po sprawdzeniu wartości oporu za pomocą multimetru ustawiona wartość odbiegała od rzeczywistej o niestały procent, przez co nie jesteśmy w stanie określić dokładnej niepewności pomiarowej znanej rezystancji.
+	Oporność rezystora jest ściśle określona oraz możliwa do regulacji pokrętłami na obudowie urządzenia. Niestety, urządzenie nie oferowało żadnej podanej niepewności na tabliczce znamionowej, przez co należy przyjąć, że ustawiona rezystancja nie jest obarczona żadnym błędem. Jest to nieprawdziwe, ponieważ po sprawdzeniu wartości oporu za pomocą multimetru ustawiona wartość odbiegała od rzeczywistej o niestały procent, przez co nie jest możliwe określić dokładnej niepewności pomiarowej znanej rezystancji.
 	
+	%----------------------------------------------------------------------------------------------------------
+	
+	\subsubsection{Niepewność mierzonego oporu}
+	
+	Niepewność mierzonego oporu należy obliczyć zgodnie z prawem przenoszenia niepewności uzależnione od niepewności pomiarowej druta oporowego zgodnie z wzorem:
+	\begin{equation}
+		u(R_{{x}_i}) = \left| \frac{dR_{{x}_i}}{da} u(a) \right| = R \frac{l}{(l-a)^2} u(a)
+	\end{equation}
+	Powyższy wzór został zastosowany dla każdego pojedynczego pomiaru każdego opornika/zestawu oporników a z otrzymanych wyników została obliczona średnia arytmetyczna stanowiąca finalny wynik niepewności pomiarowej mierzonego oporu. Zatem wzór końcowy niepewności określony jest równaniem:
+	\begin{equation}
+		u(R_x) = \frac{\sum_{i = 1}^{10} R_{{x}_i}}{10}
+	\end{equation}
+	Niepewność wynosi odpowiednio dla poszczególnych rezystorów:
+	\begin{itemize}
+		\item Opornik 1
+			\begin{equation}
+				u(R_1) = 0.05~\Omega
+			\end{equation}
+		
+		\item Opornik 2
+			\begin{equation}
+				u(R_2) = 0.14~\Omega
+			\end{equation}
+			
+		\item Opornik 3
+			\begin{equation}
+				u(R_3) = 0.28~\Omega
+			\end{equation}
+			
+		\item Połaczenie szeregowe
+			\begin{equation}
+				u(R_s) = 0.47~\Omega
+			\end{equation}
+			
+		\item Połaczenie równoległe
+			\begin{equation}
+				u(R_r) = 0.03~\Omega
+			\end{equation}
+	\end{itemize}
+
+	\subsubsection{Niepewność złożona obliczonej rezystancji}
+	Niepewność obliczenia rezystancji jest niepewnością złożoną uzależnioną od niepewności pomiaru oporności $R_1$, $R_2$ oraz $R_3$ i wyraża się ją wzorem:
+	\begin{equation}
+		u(R) = \sqrt{\left( \frac{\delta R}{\delta R_1} \right)^2 u(R_1)^2 + \left( \frac{\delta R}{\delta R_2} \right)^2 u(R_2)^2 + \left( \frac{\delta R}{\delta R_3} \right)^2 u(R_3)^2}
+		\label{niepewnosc_zlozona}
+	\end{equation}
+	Stąd dla połączenia szeregowego uzyskujemy niepewność określoną wzorem:
+	\begin{equation}
+		u(R_{s_{obl}}) = \sqrt{u(R_1)^2 + u(R_2)^2 + u(R_3)^2} \approx 0.32~\Omega
+	\end{equation}
+	Dla połączenia równoległego niepewność złożona, po podstawieniu do wzoru \ref{niepewnosc_zlozona}, wynosi:
+	\begin{equation}
+		u(R_{r_{obl}}) \approx 0.02~\Omega
+	\end{equation}
 %--------------------------------------------------------------------------------------------------------------
 
 	\section{Podsumowanie}
+	Wyniki z uwzględnieniem niepewności pomiarowych zostały przedstawione w tabeli poniżej. Dla oporników 1, 2 oraz 3 wartość rezystancji jest wyznaczana tylko doświadczalnie.
+	\begin{table}[!h]
+		\centering
+		\begin{tabular}{| c | c | c |}
+			\cline{1-2}
+			\textbf{Opornik} & \textbf{Oporność wyznaczona [$\Omega$]} \\ \cline{1-2}
+			Opornik 1 & $12.49 \pm 0.05$ \\ \cline{1-2}
+			Opornik 2 & $35.26 \pm 0.14$ \\ \hline
+			Opornik 3 & $70.53 \pm 0.28$ & \textbf{Oporność obliczona [$\Omega$]} \\ \hline
+			Połączenie szeregowe & $117.18 \pm 0.47$ & $118.28 \pm 0.32$\\ \hline
+			Połączenie równoległe & $8.05 \pm 0.03$ & $8.16 \pm 0.02$\\ \hline
+		\end{tabular}
+		\caption{Podsumowanie wyników doświadczenia wraz z niepewnościami}
+	\end{table}
 
 %--------------------------------------------------------------------------------------------------------------
 
