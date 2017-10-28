@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.25)  26 OCT 2017 23:40
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.25)  28 OCT 2017 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -589,14 +589,20 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 60.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 60.
- [2] [3] [4] (./Sprawozdanie_Dominik.aux) ) 
-Here is how much of TeX's memory you used:
- 15579 strings out of 493591
- 304600 string characters out of 6143546
- 311510 words of memory out of 5000000
- 18921 multiletter control sequences out of 15000+600000
- 3792 words of font info for 33 fonts, out of 8000000 for 9000
- 1347 hyphenation exceptions out of 8191
- 48i,5n,61p,10381b,226s stack positions out of 5000i,500n,10000p,200000b,80000s
+ [2] [3]
+File: schemat.png Graphic file (type QTm)
+ <use  "schemat.png" >
 
-Output written on Sprawozdanie_Dominik.pdf (4 pages).
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4] [5] (./Sprawozdanie_Dominik.aux) ) 
+Here is how much of TeX's memory you used:
+ 15600 strings out of 493591
+ 304962 string characters out of 6143546
+ 312510 words of memory out of 5000000
+ 18929 multiletter control sequences out of 15000+600000
+ 3816 words of font info for 36 fonts, out of 8000000 for 9000
+ 1347 hyphenation exceptions out of 8191
+ 48i,6n,61p,10381b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on Sprawozdanie_Dominik.pdf (5 pages).
