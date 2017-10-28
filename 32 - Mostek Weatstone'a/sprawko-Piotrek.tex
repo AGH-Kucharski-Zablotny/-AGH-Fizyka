@@ -52,7 +52,7 @@
 %--------------------------------------------------------------------------------------------------------------
 	
 	\section{Opracowanie danych pomiarowych}
-	Długość druta oporowego została zmierzona i wynosi $100$ [cm]. Jest ona dana zmienną $l$
+	Długość druta oporowego została zmierzona i wynosi $100$ cm. Jest ona dana zmienną $l$
 	\begin{equation}
 		l = 100 \textrm{ cm}
 	\end{equation}
@@ -146,7 +146,7 @@
 	
 	%----------------------------------------------------------------------------------------------------------
 	
-	\subsection{Pomiar dla połączenia szeregowego}
+	\subsection{Pomiar dla połączenia równoległego}
 	W tabeli \ref{tabela:rownolegle} zestawiono pomiary przeprowadzone połączenia równoległego oporników $R_1$, $R_2$, $R_3$. Przyjęty został krok zmiany znanej rezystancji $0.5 ~\Omega$ z wyjątkiem pierwszego pomiaru dla $a = 500$ mm (celem uzyskania wyniku równego rezystancji znanej).
 	
 	\begin{table}[!h]
@@ -157,7 +157,7 @@
 				Długość  $a$ [mm] & 500 & 485 & 472 & 459 & 450 & 519 & 534 & 552 & 557 & 596 \\ \hline
 				Opór $R_{r}$ obliczona [$\Omega$] & 8.0 & 8.0 & 8.05 & 8.06 & 8.18 & 8.09 & 8.02 & 8.01 & 7.95 & 8.11 \\ \hline
 		\end{tabular}}
-		\caption{Wyniki pomiarów dla połączenia szeregowego}
+		\caption{Wyniki pomiarów dla połączenia równoległego}
 		\label{tabela:rownolegle}
 	\end{table}
 	
@@ -169,6 +169,19 @@
 	%----------------------------------------------------------------------------------------------------------
 	
 	\subsection{Analiza niepewności}
+	
+	\subsubsection{Niepewność pomiarowa długości druta oporowego}
+	
+	Drut oporowy został rozciagnięty nad całą długością przymiaru milimetrowego, dlatego stosujemy niepewność typu B, czyli wartość działki elementarnej:
+	\begin{equation}
+		u(l) = 0.1 \textrm{ cm}
+	\end{equation}
+	
+	%----------------------------------------------------------------------------------------------------------
+	
+	\subsubsection{Niepewność pomiarowa opornika o znanej rezystancji}
+	
+	Oporność rezystora jest ściśle określona oraz możliwa do regulacji pokrętłami na obudowie urządzenia. Niestety, urządzenie nie oferowało żadnej podanej niepewności na tabliczce znamionowej, przez co musimy przyjąć, że ustawiona rezystancja nie jest obarczona żadnym błędem. Jest to nieprawdziwe, ponieważ po sprawdzeniu wartości oporu za pomocą multimetru ustawiona wartość odbiegała od rzeczywistej o niestały procent, przez co nie jesteśmy w stanie określić dokładnej niepewności pomiarowej znanej rezystancji.
 	
 %--------------------------------------------------------------------------------------------------------------
 
