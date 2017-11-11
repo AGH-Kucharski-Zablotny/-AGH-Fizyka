@@ -81,6 +81,7 @@
 			Masa substancji wydzielonej podczas elektrolizy jest proporcjonalna do ładunku, który przepłynął przez elektrolit.
 			\begin{equation}
 				m = qk = Itk
+				\label{eq:I_prawo_elektrolizy}
 			\end{equation}
 			gdzie $k$ to równoważnik elektrochemiczny, $q$ to ładunek elektryczny, $I$ to natężenie prądu elektrycznego oraz $t$ to czas elektrolizy.
 			
@@ -95,13 +96,15 @@
 			Stała Faradaya wyraża ładunek elektryuczny przypadający na jeden mol eletronów oraz określa się ją wzorem
 			\begin{equation}
 				F = N_A e
+				\label{wzor:stala_faradaya}
 			\end{equation}
 			gdzie $N_A$ to stała Avogadra ($N_A \approx 6.022 \cdot 10^{23} \textrm{ mol}^{-1}$) oraz $e$ to ładunek elektronu ($e \approx 1.602 \cdot 10^{-19} \textrm{ C}$). Na podstawie tego wzoru jesteśmy w stanie obliczyć ładunek elementarny dzieląc obie strony równania przez stałą Avogadra.
 	
 %--------------------------------------------------------------------------------------------------------------
 
 	\section{Wykonanie ćwiczenia}
-	Ćwiczenie należy rozpocząć od całkowitego oczyszczenia, wysuszenia, ostudzenia miedzianych blaszek oraz ważenia katody. Uzyskaną masę zapisujemy aby wykorzystać ją do późniejszych obliczeń. Jest to etap konieczny, ponieważ z definicji katody wiemy, że jony wydzielone z elektrolizera ,,wpływają" do katody, stąd masa katody wzrośnie o masę wydzielonych jonów elektrolizera. Następnie należy przygotować układ elektryczny zgodny z schematem przedstawionym na rysunku \ref{schemat_ukladu}. Po podłączeniu blaszek do układu należy zaurzyć zestaw do elektrolizera, włączyć zasilanie oraz skalibrować wartość napięcia oraz oporności na oporniku aby uzyskać natężenie $0.5$ A na amperomierzu. Taki układ pozostawiamy na pół godziny dbając o utrzymanie stałego natężenia w układzie aby elektroliza była jednostajna w czasie. Czas ten jest ważny ze względu na jego późniejsze wykorzystanie w obliczaniu równoważnika elektrochemicznego. Po upływie wyznaczonego czasu ponownie należy przepułkać katodę wodą destylowaną, osuszyć i zważyć ponownie. Uzyskana różnica mas pozwoli na obliczenie stałej Faradaya zgodnie z II prawem elektrolizy Faradaya oraz wartości równoważnika elektrochemicznego zgodnie z I prawem elektrolizy Faradaya.
+	\subsection{Opis wykonania ćwiczenia}
+	Ćwiczenie należy rozpocząć od całkowitego oczyszczenia, wysuszenia, ostudzenia miedzianych blaszek oraz ważenia katody. Uzyskaną masę zapisujemy aby wykorzystać ją do późniejszych obliczeń. Jest to etap konieczny, ponieważ z definicji katody wiemy, że jony wydzielone z elektrolizera ,,wpływają" do katody, stąd masa katody wzrośnie o masę wydzielonych jonów elektrolizera. Następnie należy przygotować układ elektryczny zgodny z schematem przedstawionym na rysunku \ref{schemat_ukladu}. Po podłączeniu blaszek do układu należy zaurzyć zestaw do elektrolizera, włączyć zasilanie oraz skalibrować wartość napięcia i oporności na oporniku aby uzyskać natężenie $0.5$ A na amperomierzu. Taki układ pozostawiamy na pół godziny dbając o utrzymanie stałego natężenia w układzie aby elektroliza była jednostajna w czasie. Czas ten jest ważny ze względu na jego późniejsze wykorzystanie w obliczaniu równoważnika elektrochemicznego. Po upływie wyznaczonego czasu ponownie należy przepułkać katodę wodą destylowaną, osuszyć i zważyć ponownie. Uzyskana różnica mas pozwoli na obliczenie stałej Faradaya zgodnie z II prawem elektrolizy Faradaya oraz wartości równoważnika elektrochemicznego zgodnie z I prawem elektrolizy Faradaya.
 
 	
 	\begin{figure}[!h]
@@ -110,6 +113,35 @@
 		\caption{Schemat układu badanego \\ \textit{Źródło: Pracownia Fizyczna WFiIS AGH - ,,Ćwiczenie nr 35: Elektroliza"}}
 		\label{schemat_ukladu}
 	\end{figure}
+
+	\subsection{Wyprowadzenie wzorów}
+	Do zamiany elektrycznie naładowanego jonu na elektordzie na obojętny atom musi przepłynąć ładunek równy iloczynowi wartościowości $w$ oraz ładunku elementarnego elektronu $e$. Z tej zależności jesteśmy w stanie określić liczbę atomów wydzielonych na elektrodzie jako stosunek ładunku całkowitego równego iloczyny prądu $I$ oraz czasu $t$ do ładunku pojedynczego jonu, co oznaczamy jako $N$:
+	
+	\begin{equation}
+		N = \frac{It}{we}
+	\end{equation}
+	
+	Masa pojedynczego atomu określa się jako stosunek masy molowej $\mu$ do liczby Avogadra $N_A$
+	
+	\begin{equation}
+		m_A = \frac{\mu}{N_A}
+	\end{equation}
+	
+	Mnożąc obie wielkości otrzyma się masę powstałych atomów w trakcie elektrolizy:
+	\begin{equation}
+		m = N \frac{\mu}{N_A} = \frac{\mu}{weN_A} It
+	\end{equation}
+	
+	Podstawiając otrzymaną masę do wzoru (\ref{eq:I_prawo_elektrolizy}) z I prawa eletrolizy Faradaya uzyskany zostaje wzór na wartość równoważnika elektrochemicznego $k$
+	\begin{equation}
+		k = \frac{\mu}{weN_A}
+		\label{wzor:rownowaznik}
+	\end{equation}
+	
+	Wartość stałej Faradaya można określić poprzez podstawienie zależności (\ref{wzor:stala_faradaya}) do wzoru na równoważnik elektrochemiczny (\ref{wzor:rownowaznik}), co po przekształceniu daje wynik:
+	\begin{equation}
+		F = \frac{\mu}{wk}
+	\end{equation}
 	
 %--------------------------------------------------------------------------------------------------------------
 	
