@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.25)  14 NOV 2017 23:01
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.25)  11 NOV 2017 15:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**sprawko-teoria.tex
-(./sprawko-teoria.tex
+**sprawko-dz.tex
+(./sprawko-dz.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
@@ -457,8 +457,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 LaTeX Warning: Unused global option(s):
     [12pts].
 
-(./sprawko-teoria.aux)
-\openout1 = `sprawko-teoria.aux'.
+(./sprawko-dz.aux)
+\openout1 = `sprawko-dz.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
@@ -476,12 +476,10 @@ LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 24.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 24.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 24.
-
 *** you should *not* be loading the inputenc package
 *** XeTeX expects the source to be in UTF8 encoding
 *** some features of other encodings may conflict, resulting in poor output.
@@ -591,14 +589,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 60.
  [2] [3]
 File: schemat.png Graphic file (type QTm)
- <use  "schemat.png" > [4] [5] [6] [7] (./sprawko-teoria.aux) ) 
+ <use  "schemat.png" > [4] [5] (./sprawko-dz.aux) ) 
 Here is how much of TeX's memory you used:
- 15599 strings out of 493591
- 304938 string characters out of 6143546
- 311504 words of memory out of 5000000
- 18936 multiletter control sequences out of 15000+600000
+ 15594 strings out of 493591
+ 304813 string characters out of 6143546
+ 312500 words of memory out of 5000000
+ 18931 multiletter control sequences out of 15000+600000
  3808 words of font info for 35 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 48i,9n,61p,10375b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,6n,61p,10371b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sprawko-teoria.pdf (7 pages).
+Output written on sprawko-dz.pdf (5 pages).
