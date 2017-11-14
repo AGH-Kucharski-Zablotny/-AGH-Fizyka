@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.25)  14 NOV 2017 23:03
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.25)  14 NOV 2017 23:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -591,14 +591,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 60.
  [2] [3]
 File: schemat.png Graphic file (type QTm)
- <use  "schemat.png" > [4] [5] [6] [7]
-(./Sprawozdanie 35 - Kucharski, Zabłotny.aux) ) 
+ <use  "schemat.png" > [4] [5] [6]
+Overfull \hbox (50.4353pt too wide) in paragraph at lines 239--246
+ [][] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 246.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 246.
+[7] (./Sprawozdanie 35 - Kucharski, Zabłotny.aux) ) 
 Here is how much of TeX's memory you used:
- 15599 strings out of 493591
- 305145 string characters out of 6143546
+ 15615 strings out of 493591
+ 305357 string characters out of 6143546
  311529 words of memory out of 5000000
- 18936 multiletter control sequences out of 15000+600000
- 3808 words of font info for 35 fonts, out of 8000000 for 9000
+ 18945 multiletter control sequences out of 15000+600000
+ 5639 words of font info for 42 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  48i,9n,61p,10400b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
 
