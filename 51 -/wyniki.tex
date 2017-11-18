@@ -1,7 +1,8 @@
 %!Mode:: "TeX:UTF-8"
 \documentclass[a4paper,12pts]{article}
 
-\usepackage[polish]{babel}
+%\usepackage[polish]{babel}
+\usepackage{polski}
 \usepackage[utf8]{inputenc}
 \usepackage{fontspec}
 \setmainfont{Calibri}
@@ -17,6 +18,7 @@
 \usepackage{anysize}
 \usepackage{geometry}
 \usepackage{multicol}
+\usepackage{multirow}
 \usepackage{graphicx}
 
 % Plik szablonowy do wykorzystania pózniej - nie zmieniaj go!
@@ -33,7 +35,7 @@
 		%-----------NUMER CWICZENIA--------%
 		{\large \textbf{Sprawozdanie z ćwiczenia nr 51} } \\
 		%-----------TEMAT ĆWICZENIA--------%
-		Cokolwiek....		
+		Współczynnik załamania ciał stałych		
 		\vfill	
 		%-----------DATA-------------%
 		15 listopada 2017r
@@ -44,20 +46,168 @@
 	%---------------------------------------------------------------------------------------
 	
 	\section{Opracowanie wyników pomiarowych}
-	Dla poszczególnych próbek dokonano wielokrotnych pomiarów, z których należy określić średni wynik. Dane dla płytki pleksiglasowej zostały przedstawione w tabeli \ref{gruby_pleksi}.
+	\subsection{Dane pomiatrowe i wyniki}
+	Dla poszczególnych próbek dokonano wielokrotnych pomiarów odległości płytki od obiektywu mikroskopu za pomocą śruby mikrometrycznej zamocowanej w mikroskopie gdy obraz powiększenia odpowiednio dla rysunku na górnej lub dolnej części płytki był wyraźny i ostry (zgodnie z uznaniem badających). Dane dla grubszej płytki plexiglasowej zostały przedstawione w tabeli \ref{gruby_pleksi}.
 	
 	% Wstaw tabelę tutaj
+	\begin{table}[!h]
+		\centering
+		\begin{tabular}{| c | c | c | c |}
+			\hline
+			\multicolumn{4}{|c|}{Materiał: plexiglas}  \\ \hline
+			\multicolumn{4}{|c|}{Grubość rzeczywista $d = 2.18$ [mm] } \\ \hline
+			\multirow{2}{*}{lp.} & \multicolumn{2}{|c|}{Wskazanie czujnika} & Grubość pozorna \\ \cline{2-4}
+			& $a_{\textrm{\footnotesize dolna}}$ [mm] & $a_{\textrm{\footnotesize górna}}$ [mm] & $h = a_{\textrm{\footnotesize dolna}} - a_{\textrm{\footnotesize górna}}$ [mm] \\ \hline
+			1  & 4.83 & 3.35 & 1.48 \\ \hline
+			2  & 4.80 & 3.35 & 1.45 \\ \hline
+			3  & 4.84 & 3.36 & 1.48 \\ \hline
+			4  & 4.82 & 3.37 & 1.45 \\ \hline
+			5  & 4.81 & 3.35 & 1.46 \\ \hline
+			6  & 4.76 & 3.28 & 1.48 \\ \hline
+			7  & 4.72 & 3.31 & 1.41 \\ \hline
+			8  & 4.73 & 3.30 & 1.43 \\ \hline
+			9  & 4.79 & 3.31 & 1.48 \\ \hline
+			10 & 4.77 & 3.32 & 1.45 \\ \hline
+		\end{tabular}
+		\caption{Wyniki pomiarów dla grubej płytki plexiglasowej.}
+		\label{gruby_pleksi}
+	\end{table}
 	
-	SSSS
+	Z pomiarów obliczono średnią arytmetyczną:
+	\begin{equation}
+		\Delta h_1 = \frac{\sum_{i = 1}^{10} h_{1_i}}{10} \approx 1.46 \textrm{ mm}
+	\end{equation}
+	którą następnie wykorzystano do obliczenia współczynnika załamania światła w plexiglasie:
+	\begin{equation}
+		n_1 = \frac{d_1}{\Delta h_1} \approx 1.49
+	\end{equation}
 	
-	Następnym badanym ciałem jest płytka pleksiglasowa o mniejszej grubości. Celem badania tego samego materiału jest określenie wpływu grubości ciała na współczynnik załamania światła w ośrodku. Zmierzone dane zawarto w tabeli \ref{chudy_pleksi}.
+	Następnie zbadano płytkę plexiglasową o mniejszej grubości. Celem badania tego samego materiału jest określenie wpływu grubości ciała na współczynnik załamania światła w ośrodku. Zmierzone dane zawarto w tabeli \ref{chudy_pleksi}.
 	
 	% Wstaw tabelę chudego pleksi tutaj
+		\begin{table}[!h]
+		\centering
+		\begin{tabular}{| c | c | c | c |}
+			\hline
+			\multicolumn{4}{|c|}{Materiał: plexiglas}  \\ \hline
+			\multicolumn{4}{|c|}{Grubość rzeczywista $d = 4.93$ [mm] } \\ \hline
+			\multirow{2}{*}{lp.} & \multicolumn{2}{|c|}{Wskazanie czujnika} & Grubość pozorna \\ \cline{2-4}
+			& $a_{\textrm{\footnotesize dolna}}$ [mm] & $a_{\textrm{\footnotesize górna}}$ [mm] & $h = a_{\textrm{\footnotesize dolna}} - a_{\textrm{\footnotesize górna}}$ [mm] \\ \hline
+			1  & 4.03 & 0.78 & 3.25 \\ \hline
+			2  & 4.00 & 0.74 & 3.26 \\ \hline
+			3  & 4.05 & 0.77 & 3.28 \\ \hline
+			4  & 4.03 & 0.76 & 3.27 \\ \hline
+			5  & 4.04 & 0.77 & 3.27 \\ \hline
+			6  & 4.02 & 0.72 & 3.30 \\ \hline
+			7  & 4.02 & 0.73 & 3.29 \\ \hline
+			8  & 4.00 & 0.76 & 3.24 \\ \hline
+		\end{tabular}
+		\caption{Wyniki pomiarów dla cienkiej płytki plexiglasowej.}
+		\label{chudy_pleksi}
+	\end{table}
 	
-	Aby porównać współczynnik załamania w innym ośrodku zbadano płytkę wykonaną ze szkła. Zmierzone dane przedstawiono w tabeli \ref{szklo}.
+	Analogicznie do grubej płytki plexiglasu obliczony zostaje średni wynik: 
+	\begin{equation}
+		\Delta h_2 = \frac{\sum_{i = 1}^{8} h_{2_i}}{8} \approx 3.27 \textrm{ mm}
+	\end{equation}
+	oraz współczynnik załamania dla cienkiej płytki wykonanej z plexiglasu:
+		\begin{equation}
+	n_2 = \frac{d_2}{\Delta h_2} \approx 1.51
+	\end{equation}
 	
+	Aby porównać współczynnik załamania w innym ośrodku zbadano płytkę wykonaną ze szkła. Rodzaj szkła nie został określony, przez co pozostaje on nieznany. Zmierzone dane przedstawiono w tabeli \ref{szklo}.
 	% Wstaw tabelę dla szkła
+		\begin{table}[!h]
+		\centering
+		\begin{tabular}{| c | c | c | c |}
+			\hline
+			\multicolumn{4}{|c|}{Materiał: szkło nieznanego rodzaju}  \\ \hline
+			\multicolumn{4}{|c|}{Grubość rzeczywista $d = 4.31$ [mm] } \\ \hline
+			\multirow{2}{*}{lp.} & \multicolumn{2}{|c|}{Wskazanie czujnika} & Grubość pozorna \\ \cline{2-4}
+			& $a_{\textrm{\footnotesize dolna}}$ [mm] & $a_{\textrm{\footnotesize górna}}$ [mm] & $h = a_{\textrm{\footnotesize dolna}} - a_{\textrm{\footnotesize górna}}$ [mm] \\ \hline
+			1  & 4.31 & 1.77 & 2.54 \\ \hline
+			2  & 4.30 & 1.79 & 2.51 \\ \hline
+			3  & 4.29 & 1.80 & 2.49 \\ \hline
+			4  & 4.29 & 1.79 & 2.50 \\ \hline
+			5  & 4.31 & 1.79 & 2.52 \\ \hline
+			6  & 4.31 & 1.79 & 2.52 \\ \hline
+			7  & 4.30 & 1.80 & 2.50 \\ \hline
+			8  & 4.30 & 1.80 & 2.50 \\ \hline
+		\end{tabular}
+		\caption{Wyniki pomiarów dla płytki szklanej nieznanego rodzaju.}
+		\label{szklo}
+	\end{table}
 	
+	Z uzyskanych danych obliczono średnią grubość pozorną:
+	\begin{equation}
+		\Delta h_3 = \frac{\sum_{i = 1}^{8} h_{3_i}}{8} \approx 2.51 \textrm{ mm}
+	\end{equation}
+	co pozwala na obliczenie współczynnika załamania światła dla szkła:
+	\begin{equation}
+		n_3 = \frac{d_3}{\Delta h_3} \approx 1.72
+	\end{equation}
 		
+	\subsection{Niepewność pomiarowa}
+	Niedokładność pomiaru grubości rzeczywistej badanej płytki jest niepewnością typu B, ponieważ nie jest możliwe określenie błędu na podstawie wielokrotnych pomiaów. Jest ona równa niepewności podanej przez producenta na tabliczce znamionowej śruby mikrometrycznej:
+	\begin{equation}
+		u(d) = 0.01 \textrm{ mm}
+	\end{equation}
+	
+	Analogicznie dla pomiaru odległości płytki od obiektywu mikroskopu - śruba mikrometryczna zamocowana na mikroskopie posiada niepewność ustaloną przez producenta, stąd:
+	\begin{equation}
+		u(a) = 0.01 \textrm{ mm}
+	\end{equation}
+	
+	Błąd wyznaczenia średniej grubości pozornej badanych płytek jest niepewnością typu A, którą wyrażamy estymatorem odchylenia standardowego dla $k$ prób:
+	\begin{equation}
+		u(h) = \sqrt{\frac{1}{k}\sum_{i=1}^{k}(\Delta h - h_i)^2}
+	\end{equation}
+	Błędy dla poszczególnych pomiarów zostały wyrażone w tabeli \ref{niepewność_h}.
+	\begin{table}[!h]
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline
+			Rodzaj materiału  &  Niepewność pomiarowa $u(h)$ [mm] \\ \hline
+			Gruby plexiglas   &  0.024 \\ \hline
+			Cienki plexiglas  &  0.020 \\ \hline
+			Szkło nieznanego rodzaju & 0.016 \\ \hline
+		\end{tabular}
+		\caption{Niepewności pomiarowe średniej grubości pozornej}
+		\label{niepewność_h}
+	\end{table}
+
+	Niepewność wyznaczenia współczynnika załamania światła jest niepewnością złożoną zależną od niepewności pomiaru rzeczywistej grubości oraz błędu średniej grubości pozornej. Wyraża się ją wzorem:
+	\begin{equation}
+		u(n) = \sqrt{\left(\frac{\delta n }{\delta d} u(d) \right)^2 + \left(\frac{\delta n}{\delta h} u(h)\right)^2} = \sqrt{\left(\frac{1}{h}u(d)\right)^2 + \left(-\frac{d}{h^2}u(h)\right)^2}
+	\end{equation}
+	Wyniki zostały przedstawione w tabeli \ref{niepewność_n}
+	\begin{table}[!h]
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline
+			Rodzaj materiału & Niepewność pomiarowa $u(n)$ \\ \hline
+			Gruby plexiglas & 0.025 \\ \hline
+			Cienki plexiglas & 0.0097 \\ \hline
+			Szkło nieznanego rodzaju & 0.012 \\ \hline
+		\end{tabular}
+		\caption{Niepewność obliczenia współczynnika załamania światła}
+		\label{niepewność_n}
+	\end{table}
+
+	\section{Podsumowanie}
+	Końcowe wartości wpółczynnika załamania światła zostały zestawione w tabeli \ref{podsumowanie_wynikow}.
+	\begin{table}[!h]
+		\centering
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			Rodzaj materiału & Wartość tabelaryczna & Wartość obliczona & Zgodność z wynikiem tabelarycznym \\ \hline
+			Gruby plexiglas & 1.489 & 1.49 $\pm$ 0.025 & TAK \\ \hline
+			Cienki plexiglas & 1.489 & 1.51 $\pm$ 0.0097 & NIE \\ \hline
+			Szkło nieznanego rodzaju & 1.4 - 1.9 & 1.72 $\pm$ 0.012 & TAK \\ \hline
+		\end{tabular}
+	\caption{Podsumowanie wyników oraz porównanie z wartościami tabelarycznymi}
+	\label{podsumowanie_wynikow}
+	\end{table}
+	Jedynym wynikiem nie zawierającym się w granicach niepewności podstawowej i rozszerzonej jest współczynnik załamania dla cienkiego plexiglasu. Jest to spowodowane nie idealnym określeniem czy obraz powiększenia jest już dostatecznie ostry (niedokładność ludzkiego oka oraz niedoskonałość wyświetlacza mikroskopu) oraz możliwą wadliwością wyświetlacza wyniku śruby mikrometrycznej mikroskopu. Podczas delikatnej regulacji położenia stolika z badanym ciałem względem obiektywu w odległościach mniejszych niż 1 mm  od mikroskopu wskazówka śruby mikrometrycznej nie wychylała się, po czym gwałtownie zmieniała swoje położenie do dalszego obszaru, jednak nie wiadomo z jaką precyzją, co zwiększa niedokładność pomiarów dla cienkiej płytki plexiglasu. Jednakże, wynik ten w granicach niepewności rozszerzonej zgadza się z współczynnikiem załamania światła dla grubszej płytki wykonanej z plexiglasu, przez co wnioskujemy, że wartosć współczynnika załamania światła nie zależy od grubości materiału.
 	
 \end{document}
