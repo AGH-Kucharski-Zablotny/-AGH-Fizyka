@@ -50,6 +50,79 @@
 	Celem ćwiczenia jest wyznaczenie momentu bezwładności brył sztywnych: metalowego pręta oraz pierścienia.
 	
 	\subsection{Wprowadzenie teoretyczne}
+	\subsubsection{II Zasada dynamiki Newtona dla ruchu obrotowego}
+	Dana jest bryła sztywna wykonująca ruch obrotowy wokół stałej (nie obracającej się w przestrzeni) osi. Jeśli na tą bryłę o momencie bezwładności $I$ działają zewnętrzne siły, które wywierają na ciało wypadkowy moment siły $M$, to ciało to bedzie obracać się z przyspieszeniem kątowym $\varepsilon$ wyrażonym zależnością:
+	\begin{equation}
+		M = I \varepsilon
+	\end{equation} 
 	
 	
-\end{document}
+	\subsubsection{Wahadło fizyczne}
+	Bryła sztywna zawieszona na stałej osi poziomej w jednorodnym polu grawitacyjnym wykonująca ruch harmoniczny dookoła tej osi nazywamy wahadłem fizycznym. Dla małego kąta początkowego wychylenia, gdzie $sin \theta \approx \theta$, określa się je równaniem różniczkowym stopnia drugiego:
+	\begin{equation}
+		I_0 \frac{d^2 \theta(t)}{dt^2} = -mg \sin \theta
+	\end{equation}
+	Co po podstawieniu wartości sinusa, oraz uproszczeniu daje równanie:
+	\begin{equation}
+		\frac{d^2 \theta(t)}{dt^2} + \omega_0^2 \theta (t) = 0
+	\end{equation}
+	Czego wynikiem jest:
+	\begin{equation}
+		\theta = \theta_m \cos(\omega_0 t + \alpha)
+	\end{equation}
+	Gdzie amplituda $\theta_m$ oraz $\alpha$ zależą od warunków początkowych.
+	
+	W porównaniu z wahadłem matematycznym rozpatrujemy w wahadle fizycznym bryłę sztywną zawieszoną na pewnej osi obrotu, podczas gdy w wahadle matematycznym rozpatrujemy ciało o danej masie zawieszone na nieważkiej nitce. Jeżeli w wahadle matematycznym ciało punktowe zamienić na bryłę sztywną to równanie sprowadzałoby się do równań wahadła fizycznego.
+	
+	
+	\subsubsection{Twierdzenie Steinera}
+	Moment bezwładności bryły sztywnej względem dowolnej osi jest równy sumie momentu bezwładności $I_0$ względem osi równoległej do danej i przechodzącej przez środek masy bryły oraz iloczynu masy bryły $m$ i kwadratu odległości $d$ między tymi dwiema osiami, co można wyrazić wzorem:
+	\begin{equation}
+		I = I_0 + md^2
+		\label{steiner}
+	\end{equation}
+
+	
+	
+	\subsubsection{Moduł bezwładności}
+	Miara bezwładności ciała w ruchu obrotowym względem określonyej osi obrotu. Określa się ją jako całkę po masie kwadratu odległości $r$ od osi obrotu:
+	\begin{equation}
+		I = \int_{m} r^2 dm
+	\end{equation}
+	Dla pręta o masie $m$ i długości $l$ obracającego się dookoła osi przechodzącej przez środek ciężkości wzór na moment bezwładności określa się równaniem:
+	\begin{equation}
+		I = \frac{1}{12}ml^2
+		\label{pret}
+	\end{equation}
+
+	Zaś dla pierścienia o masie $m$ i zewnętrznym promieniu $R$ obracającego się dookoła osi przechodzącej przez jego środek wynosi:
+	\begin{equation}
+		I = mR^2
+		\label{pierscien}
+	\end{equation}
+
+	
+	
+	
+	\subsection{Opis wykonania ćwiczenia}
+	Bryła sztywna została zawieszona na sztywnym stelażu w taki sposób aby mogła wykonywać ruch harmoniczny a potem wprawiona w ruch drgający. Schemat wahadła fizycznego przedstawiono na rysunku \ref{wahadlo}, zaś schemat badanych ciał został przedstawiony na rysunku \ref{ciala} Aby wyznaczyć jej moment bezwładności potrzebne jest zbadanie czasu wahania jednego okresu drgań (poprzez zbadanie czasu 10 okresów oraz następnemu podzieleniu przez 10) oraz zmierzenie jej masy oraz wymiarów, szczególnie odległości osi ruchu obrotowego od środka ciężkości bryły sztywnej. Wszystkie uzyskane wielkości zostały zapisane w tabeli a następnie wyniki wielokrotnych pomiarów zostały uśrednione. Następnie w celu zastosowania twierdzenia Steinera do wzoru \ref{steiner} zostały podstawione odpowiednie wielkości zbadane oraz za bezwładność przechodzącą przez środek masy ciała zostaje podstawiony odpowiednio wzór \ref{pret} lub \ref{pierscien}.
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.5]{wahadlo.png}
+		\caption{Schemat wahadła fizycznego \\ \textit{Źródło: Pracownia Fizyczna WFiIS AGH - ,,Ćwiczenie nr 1 - Wahadła fizyczne"}}
+		\label{wahadlo}
+	\end{figure}
+\newpage
+
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.5]{ciala.png}
+		\caption{\centering Schemat badanych brył - pręta oraz pierścienia \\ \textit{Źródło: Pracownia Fizyczna WFiIS AGH - ,,Ćwiczenie nr 1 - Wahadła fizyczne"}}
+		\label{ciala}
+	\end{figure}
+
+
+	\section{Wykonanie ćwiczenia}
+
+ \end{document}

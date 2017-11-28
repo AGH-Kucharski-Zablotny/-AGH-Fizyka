@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.10.12)  22 NOV 2017 19:36
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.10.12)  28 NOV 2017 13:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -677,14 +677,62 @@ Package caption Info: End \AtBeginDocument code.
 
 [1
 
-] [2] (./teoria.aux) ) 
-Here is how much of TeX's memory you used:
- 12304 strings out of 492994
- 270714 string characters out of 6137807
- 347650 words of memory out of 5000000
- 16258 multiletter control sequences out of 15000+600000
- 530376 words of font info for 35 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 36i,4n,65p,10369b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 54.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 54.
+ [2]
+File: wahadlo.png Graphic file (type bmp)
+<wahadlo.png>
+ [3]
+File: ciala.png Graphic file (type bmp)
+<ciala.png>
 
-Output written on teoria.pdf (2 pages).
+! Argument of \caption@ydblarg has an extra }.
+<inserted text> 
+                \par 
+l.121 ... ,,Ćwiczenie nr 1 - Wahadła fizyczne"}}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+{\@caption \@captype }{\@firstoftwo {\nobreak \@xcentercr }}\def \reserved@b \E
+TC.
+! Paragraph ended before \caption@ydblarg was complete.
+<to be read again> 
+                   \par 
+l.121 ... ,,Ćwiczenie nr 1 - Wahadła fizyczne"}}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 ... ,,Ćwiczenie nr 1 - Wahadła fizyczne"}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[4] (./teoria.aux) ) 
+Here is how much of TeX's memory you used:
+ 12337 strings out of 492994
+ 271418 string characters out of 6137807
+ 352690 words of memory out of 5000000
+ 16281 multiletter control sequences out of 15000+600000
+ 530424 words of font info for 41 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 36i,5n,65p,10369b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on teoria.pdf (4 pages).
